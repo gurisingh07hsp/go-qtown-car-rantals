@@ -3324,7 +3324,8 @@ ol li {
 .footer-dark {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
-  background: url(../images/footer-bg.jpg) center no-repeat;
+  /* background: url(../images/footer-bg.jpg) center no-repeat; */
+  background-color: black;
   background-size: cover;
   /*______Widget Services______*/
 }

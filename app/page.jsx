@@ -1,133 +1,22 @@
 import Loading from "../components/Loading";
+import '../public/css/animate.min.css'
+import '../public/css/feather.css'
+import '../public/css/lc_lightbox.css'
+import '../public/css/font-awesome.min.css'
+import '../public/css/magnific-popup.min.css'
+import '../public/css/bootstrap.min.css'
+import '../public/css/style.css'
+
 export default function Home() {
   return (
   <div>
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css"/>
-    <link rel="stylesheet" type="text/css" href="css/feather.css"/>
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css"/>
-    <Loading/>
-    {/* <div className="loading-area">
-        <div className="loading-box flex justify-center items-center"></div>
-        <div className="loading-pic flex justify-center">
-            <img className="loader-gif" src="images/loader-car.gif" alt="loader Image"/>
-        </div>
-    </div> */}
+    {/* <Loading/> */}
 
 	<div className="page-wraper">
-        {/* <header className="site-header header-style-1 mobile-sider-drawer-menu light-hdr ">
-
-            <div className="">     
-                <div className="header-middle main-bar">
-                    <div className="border bg-[#ff6100] px-2">
-                        <div className="leading-0.5 text-black">
-                         <p className='md:text-3xl text-lg font-bold' >Go Qtown</p>
-                         <p className="md:text-3xl text-lg ms-4 font-bold">Car Rantals</p>
-                        </div>
-                    </div>
-                    
-                    <div className="header-info-wraper">
-                        <div className="main-bar-wraper  navbar-expand-lg">
-            
-                            <div className="header-bottom">
-                                <div className="container-block clearfix">
-    
-                                    <div className="navigation-bar">
-                                        
-                                        <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button" className="navbar-toggler collapsed">
-                                            <span className="sr-only">Toggle navigation</span>
-                                            <span className="icon-bar icon-bar-first"></span>
-                                            <span className="icon-bar icon-bar-two"></span>
-                                            <span className="icon-bar icon-bar-three"></span>
-                                        </button> 
-                
-                                       
-                                        <div className="nav-animation header-nav navbar-collapse d-flex justify-content-between">
-                                    
-                                            <ul className="nav navbar-nav">
-                                                <li className="has-child"><a href="#">Home</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="/">Home 1</a></li>
-                                                        <li><a href="/">Home 2</a></li>
-                                                    </ul>                                                                 
-                                                </li>
-                                                <li><a href="about-us">About</a></li>
-                                                <li className="has-child">
-                                                    <a href="javascript:;">Cars</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="cars.html">Cars</a></li>
-                                                        <li><a href="cars-grid-1.html">Cars Grid 1</a></li>
-                                                        <li><a href="cars-grid-2.html">Cars Grid 2</a></li>
-                                                        <li><a href="cars-grid-3.html">Cars Grid 3</a></li>
-                                                        <li><a href="cars-grid-4.html">Cars Grid 4</a></li> 
-                                                        <li><a href="cars-detail.html">Cars Detail</a></li>                                              
-                                                    </ul>                                
-                                                </li>
-                                                <li><a href="services">Services</a></li>
-                                                <li className="has-child">
-                                                    <a href="javascript:;">Pages</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="dealer-list.html">Dealers</a></li>
-                                                        <li><a href="error-404.html">Error 404 </a></li>
-                                                        <li><a href="faq.html">Faq</a></li>
-                                                        <li><a href="gallery.html">Gallery</a></li>
-                                                        <li><a href="plans.html">Plans</a></li> 
-                                                        <li><a href="team.html">Team</a></li>
-                                                        <li><a href="team-detail.html">Team Detail</a></li>
-                                                        <li><a href="testimonial.html">Testimonials</a></li>                                             
-                                                    </ul>                           
-                                                </li>
-                                                <li className="has-child">
-                                                    <a href="javascript:;">Blog</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                        <li><a href="blog-list.html">Blog List</a></li>
-                                                        <li><a href="blog-detail.html">Blog Detail</a></li>
-                                                    </ul>                           
-                                                </li>
-                                                <li><a href="contact-us.html">Contact</a></li>  
-                                            </ul>
-                
-                                        </div>
-                                    </div>
-                                    
-                                </div>   
-                            </div>
-
-                        </div>
-                        
-                    </div>
-                  
-                    <div className="extra-nav header-1-nav">
-                        <div className="extra-cell one">
-                            <ul className="wt-topbar-left-info">
-                                <li>
-                                    <a href="tel:+712021022525">
-                                        <span><i className="feather feather-mail"></i></span>+71 202 102 2525
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:someone@example.com">
-                                        <span><i className="feather feather-phone-call"></i></span>carntelinfo@gmail.com
-                                    </a>
-                                </li>
-                            </ul>   
-                        </div>
-                                                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </header> */}
        
         <div className="page-content">
 
@@ -191,14 +80,6 @@ export default function Home() {
                                                         </div>
                                                     </div>
                                                   
-                                                    {/* <div className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-bike">
-                                                        <div className="twm-tabs-bx">
-                                                            <div className="tabs-media">
-                                                                <img src="images/tabs-icon/bike.png" alt="#"/>
-                                                            </div>
-                                                            <div className="tabs-title">Bike</div>
-                                                        </div>
-                                                    </div> */}
                                                 </div>
                                             </nav>
                                             <div className="tab-content" id="nav-tabContent">
@@ -546,92 +427,6 @@ export default function Home() {
                                                             
                                                     </div>
                                                 </div>
-                                               
-                                                {/* <div className="tab-pane fade" id="nav-bike">
-                                                    <div className="twm-tabs-search-section">
-
-                                                        <form>
-                                                            <div className="row m-b20">
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Choose Vehicle type</label>
-                                                                        <select className="form-select form-control" aria-label="Default select example">
-                                                                            <option selected>Model</option>
-                                                                            <option value="1">Yamaha</option>
-                                                                            <option value="2">Honda</option>
-                                                                            <option value="3">Suzuki</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Pick up Location</label>
-                                                                        <input className="form-control" placeholder="Type...">
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Drop off Location</label>
-                                                                        <input className="form-control" placeholder="Type...">
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-6 col-xl-6 col-lg-6">
-                                                                    <div className="form-group form-group-2column-wrap twm-input-with-icon">
-                                                                        <label>Pick up date and time</label>
-                                                                        <div className="form-group-2column">
-                                                                            <div className="input-group date datepicker">
-                                                                                <input className="form-control" placeholder="Date">
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa fa-solid fa-calendar-days"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="input-group time timepicker">
-                                                                                <input className="form-control" placeholder="Time">
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa-regular fa-clock"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-6 col-xl-6 col-lg-6">
-                                                                    <div className="form-group form-group-2column-wrap twm-input-with-icon">
-                                                                        <label>Return date and time</label>
-                                                                        <div className="form-group-2column">
-                                                                            <div className="input-group date datepicker">
-                                                                                <input className="form-control" placeholder="Date">
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa fa-solid fa-calendar-days"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="input-group time timepicker">
-                                                                                <input className="form-control" placeholder="Time">
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa-regular fa-clock"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-    
-                                                            <div className="twm-tabs-search-btn">
-                                                                <a href="cars-grid-4.html" className="site-button">
-                                                                    <em>Find A vehicle</em>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                            
-                                                    </div>
-                                                </div> */}
                                             </div>
                                         </div>
 
@@ -640,7 +435,7 @@ export default function Home() {
                                 </div>
                              </div>
                         </div>
-                        <div className="twm-banner-right">
+                        <div className="twm-banner-right md:block hidden">
                             <div className="twm-banner-right-section">
                                 <div className="twm-banner-r-content">
                                     <div className="twm-banner-r-bx">
@@ -655,7 +450,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="twm-banner-media">
-                                    <img src="images/main-slider/slider1/car.png" alt="Car Pic"/>
+                                    <img src="images/main-slider/slider1/car1.png" className="md:w-xl" alt="Car Pic"/>
                                 </div>
                             </div>
                         </div>
@@ -670,7 +465,7 @@ export default function Home() {
 
                    
                     
-                    <div className="section-head center ">
+                    <div className="section-head center">
                         <div className="twm-sm-title left">Find your car by car brand</div>
                         <h2 className="twm-large-title site-text-dark">Wide Range Of Commercial 
                             And Luxury Cars
@@ -747,7 +542,7 @@ export default function Home() {
                         <div className="col-xl-6 col-lg-12">
                             <div className="twm-mid-section-car">
                                 <div className="twm-media">
-                                    <img src="images/explore-sec-image.png" alt="Image"/>
+                                    <img src="images/explore-sec-image1.png" alt="Image"/>
                                 </div>
                             </div>
                         </div>
@@ -847,7 +642,7 @@ export default function Home() {
                         <div className="col-lg-7 col-md-12">
                             <div className="twm-abus-left">
                                 <div className="twm-media">
-                                    <img src="images/abus-pic.jpg" alt="Image"/>
+                                    <img src="images/abus-pic1.png" alt="Image"/>
                                     <div className="twm-abus-video">
                                         <a href="https://vimeo.com/337649532" className="mfp-video ">
                                             <i className="icon fa fa-play"></i>
@@ -860,9 +655,9 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="twm-media2">
-                                    <img src="images/car-pic1.png" alt="Image"/>
-                                </div>
+                                {/* <div className="twm-media2">
+                                    <img src="images/car-pic.png" alt="Image"/>
+                                </div> */}
                             </div>
                         </div>
                         
@@ -994,7 +789,7 @@ export default function Home() {
                                 <div className="twm-vehicle-fleet-bx">
                                     <div className="twm-media">
                                         <div className="twm-media-pic">
-                                            <img src="images/vehicle-2/pic1.jpg" alt="image"/>
+                                            <img src="images/banner/pic1.jpg" alt="image"/>
                                         </div>
                                         <div className="twm-price-section">
                                             <div className="v-price">$800</div>
@@ -1306,7 +1101,7 @@ export default function Home() {
                         <div className="col-lg-7 col-md-12">
                             <div className="twm-w-chooseus-media">
                                 <div className="twm-media">
-                                    <img src="images/need-h-pic.png" alt="Image"/>
+                                    <img src="images/banner/4.png" alt="Image"/>
                                 </div>
                                 <div className="twm-need-help-bx">
                                     <div className="twm-need-help-content">
@@ -1482,15 +1277,15 @@ export default function Home() {
 
                         </div>
 
-                        <div className="twm-adv-show">
+                        {/* <div className="twm-adv-show">
                             <img src="images/adv-car.png" alt="Image"/>
-                        </div>
+                        </div> */}
 
                     </div>
 
                 </div>
             </div>
-     
+{/*      
             <div className="section-full p-t150 site-bg-white twm-testimonial-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container">
 
@@ -1716,7 +1511,7 @@ export default function Home() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
             <div className="section-full p-t150 p-b120 site-bg-white twm-blog-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container-fluid">
 
@@ -1908,122 +1703,6 @@ export default function Home() {
 
      
         </div>
-
-        <footer className="footer-dark">
-            <div className="container"> 
-                <div className="footer-top">
-                    <div className="row">
-
-                        <div className="col-xl-4 col-lg-4">
-                            
-                            <div className="widget widget_about">
-                                <div className="logo-footer clearfix">
-                                    <a href="index.html"><img src="images/logo-f.png" alt="Image"/></a>
-                                </div>
-                                <div className="f-about-info">
-                                    We offer a range of the finest and most premium cars and bikes on rent.
-                                </div>
-                                <ul className="ftr-list">
-                                    <li><i className="feather feather-phone-call"></i><a href="tel:1236540214">123 654 0214</a></li>
-                                    <li><i className="feather feather-mail"></i>carntelinfo@gmail.com</li>
-                                    <li><i className="feather feather-home"></i>55/11 ronin tower New York</li>
-                                </ul>
-                                <div className="twm-social">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                        <li><a href="https://www.x.com"><i className="feather feather-facebook"></i></a></li>
-                                        <li><a href="https://www.instagram.com"><i className="feather feather-instagram"></i></a></li>
-                                        <li><a href="https://www.pinterest.com/"><i className="fa-brands fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>                            
-                            
-                        </div> 
-
-                        <div className="col-xl-8 col-lg-8">
-                            <div className="ftr-right-section">
-                                
-                                <div className="row">
-                                    <div className="col-lg-5 col-md-6 col-6 m-b20">
-                                        
-                                        <div className="widget widget_time-duraion">
-                                            <h3 className="widget-title">Quick Links</h3>
-                                            <ul>
-                                                <li><span>Monday - Friday:</span>09:00 AM - 09:00 PM</li>
-                                                <li><span>Saturday:</span>09:00 AM - 07:00PM </li>
-                                                <li><span>Sunday:</span>Closed </li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-
-                                    <div className="col-lg-3 col-md-6 col-6 m-b20">
-                                        
-                                        <div className="widget widget_services">
-                                            <h3 className="widget-title">Quick Links</h3>
-                                            <ul>
-                                                <li><a href="about-us.html">About us</a></li>
-                                                <li><a href="faq.html">FAQ’s</a></li>
-                                                <li><a href="service.html">Services</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="contact-us.html">Contact</a></li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-
-                                    <div className="col-lg-4 col-md-12 col-sm-12 m-b20">
-                                        
-                                        <div className="widget widget_services">
-                                            <h3 className="widget-title">Vehicles Type</h3>
-                                            <ul className="gris-2-column">
-                                                <li><a href="cars-detail.html">SUVs</a></li>
-                                                <li><a href="cars-detail.html">Sport Coupe</a></li>
-                                                <li><a href="cars-detail.html">Convertible</a></li>
-                                                <li><a href="cars-detail.html">Wagon</a></li>
-                                                <li><a href="cars-detail.html">Sedan</a></li>
-                                                <li><a href="cars-detail.html">Yamaha R15</a></li>
-                                                <li><a href="cars-detail.html">BMW S 1000 RR</a></li>
-                                                <li><a href="cars-detail.html">Kawasaki</a></li>
-                                                <li><a href="cars-detail.html">Hayabusa</a></li>
-                                                <li><a href="cars-detail.html">Harley Davidson</a></li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-    
-                                </div> 
-
-                                <div className="twm-subscribe-nl">
-                                    <div className="twm-nl-title">
-                                        Subscribe To Our Newsletter Today! 
-                                    </div>
-                                    <div className="twm-nl-section">
-                                        <form>
-                                            <div className="ftr-nw-form">
-                                                <input name="news-letter" className="form-control" placeholder="Email address..." type="text"/>
-                                                <button className="ftr-nw-subcribe-btn"><i className="feather feather-arrow-up-right"></i></button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div className="footer-bottom">
-                <div className="footer-bottom-info">
-                    <div className="footer-copy-right">
-                        <span className="copyrights-text">© 2024<span className="site-text-primary">Carntel</span> All  rights reserved.</span>
-                    </div>
-                </div>
-            </div>
-    
-        </footer>
 		<button className="scroltop"><span className="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
 
  	</div>

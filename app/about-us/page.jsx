@@ -1,131 +1,23 @@
 import React from 'react'
 import Loading from '../../components/Loading'
+import '../../public/css/animate.min.css'
+import '../../public/css/feather.css'
+import '../../public/css/lc_lightbox.css'
+import '../../public/css/font-awesome.min.css'
+import '../../public/css/magnific-popup.min.css'
+import '../../public/css/bootstrap.min.css'
+import '../../public/css/style.css'
 const page = () => {
   return (
     <div>
-
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css"/>
-    <link rel="stylesheet" type="text/css" href="css/feather.css"/>
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css"></link>
 
-    <Loading/>
-
-        {/* <div className="loading-area">
-        <div className="loading-box"></div>
-        <div className="loading-pic">
-            <img className="loader-gif" src="images/loader-car.gif" alt="loader Image"/>
-        </div>
-    </div> */}
+    {/* <Loading/> */}
 
 	<div className="page-wraper">
-        {/* <header className="site-header header-style-1 mobile-sider-drawer-menu hdr-transparent">
-
-            <div className="header-middle-wraper sticky-header ">     
-                <div className="header-middle main-bar">
-                    <div className="logo-header">
-                        <div className="logo-header-inner logo-header-one">
-                        </div>
-                    </div>
-                    
-                    <div className="header-info-wraper">
-                        <div className="main-bar-wraper  navbar-expand-lg">
-            
-                            <div className="header-bottom">
-                                <div className="container-block clearfix">
-    
-                                    <div className="navigation-bar">
-                                        <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button" className="navbar-toggler collapsed">
-                                            <span className="sr-only">Toggle navigation</span>
-                                            <span className="icon-bar icon-bar-first"></span>
-                                            <span className="icon-bar icon-bar-two"></span>
-                                            <span className="icon-bar icon-bar-three"></span>
-                                        </button> 
-                                        <div className="nav-animation header-nav navbar-collapse collapse d-flex justify-content-between">
-                                    
-                                            <ul className=" nav navbar-nav">
-                                                <li className="has-child"><a href="javascript:;">Home</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="index.html">Home 1</a></li>
-                                                        <li><a href="index-2.html">Home 2</a></li>
-                                                    </ul>                                                                 
-                                                </li>
-                                                <li><a href="about-us.html">About</a></li>
-                                                <li className="has-child">
-                                                    <a href="javascript:;">Cars</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="cars.html">Cars</a></li>
-                                                        <li><a href="cars-grid-1.html">Cars Grid 1</a></li>
-                                                        <li><a href="cars-grid-2.html">Cars Grid 2</a></li>
-                                                        <li><a href="cars-grid-3.html">Cars Grid 3</a></li>
-                                                        <li><a href="cars-grid-4.html">Cars Grid 4</a></li> 
-                                                        <li><a href="cars-detail.html">Cars Detail</a></li>                                              
-                                                    </ul>                                
-                                                </li>
-                                                <li><a href="service.html">Services</a></li>
-                                                <li className="has-child">
-                                                    <a href="javascript:;">Pages</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="dealer-list.html">Dealers</a></li>
-                                                        <li><a href="error-404.html">Error 404 </a></li>
-                                                        <li><a href="faq.html">Faq</a></li>
-                                                        <li><a href="gallery.html">Gallery</a></li>
-                                                        <li><a href="plans.html">Plans</a></li> 
-                                                        <li><a href="team.html">Team</a></li>
-                                                        <li><a href="team-detail.html">Team Detail</a></li>
-                                                        <li><a href="testimonial.html">Testimonials</a></li>                                             
-                                                    </ul>                           
-                                                </li>
-                                                <li className="has-child">
-                                                    <a href="javascript:;">Blog</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                        <li><a href="blog-list.html">Blog List</a></li>
-                                                        <li><a href="blog-detail.html">Blog Detail</a></li>
-                                                    </ul>                           
-                                                </li>
-                                                <li><a href="contact-us.html">Contact</a></li>  
-                                            </ul>
-                
-                                        </div>
-                                    </div>
-                                    
-                                </div>   
-                            </div>
-
-                        </div>
-                        
-                    </div>
-                    <div className="extra-nav header-1-nav">
-                        <div className="extra-cell one">
-                            <ul className="wt-topbar-left-info">
-                                <li>
-                                    <a href="tel:+712021022525">
-                                        <span><i className="feather feather-mail"></i></span>+71 202 102 2525
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:someone@example.com">
-                                        <span><i className="feather feather-phone-call"></i></span>carntelinfo@gmail.com
-                                    </a>
-                                </li>
-                            </ul>   
-                        </div>
-                                                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </header> */}
         <div className="page-content">
             <div className="wt-bnr-inr site-bg-dark  twm-primary-overlay-wrap url(images/banner/banner-10.jpg)">
                 <div className="twm-primary-overlay"></div>
@@ -935,123 +827,6 @@ const page = () => {
 
         </div>
      
-        <footer className="footer-dark">
-            <div className="container">
-                
-                <div className="footer-top">
-                    <div className="row">
-
-                        <div className="col-xl-4 col-lg-4">
-                            
-                            <div className="widget widget_about">
-                                <div className="logo-footer clearfix">
-                                    <a href="index.html"><img src="images/logo-f.png" alt="Image"/></a>
-                                </div>
-                                <div className="f-about-info">
-                                    We offer a range of the finest and most premium cars and bikes on rent.
-                                </div>
-                                <ul className="ftr-list">
-                                    <li><i className="feather feather-phone-call"></i><a href="tel:1236540214">123 654 0214</a></li>
-                                    <li><i className="feather feather-mail"></i>carntelinfo@gmail.com</li>
-                                    <li><i className="feather feather-home"></i>55/11 ronin tower New York</li>
-                                </ul>
-                                <div className="twm-social">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                        <li><a href="https://www.x.com"><i className="feather feather-facebook"></i></a></li>
-                                        <li><a href="https://www.instagram.com"><i className="feather feather-instagram"></i></a></li>
-                                        <li><a href="https://www.pinterest.com/"><i className="fa-brands fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>                            
-                            
-                        </div> 
-
-                        <div className="col-xl-8 col-lg-8">
-                            <div className="ftr-right-section">
-                                
-                                <div className="row">
-                                    <div className="col-lg-5 col-md-6 col-6 m-b20">
-                                        
-                                        <div className="widget widget_time-duraion">
-                                            <h3 className="widget-title">Quick Links</h3>
-                                            <ul>
-                                                <li><span>Monday - Friday:</span>09:00 AM - 09:00 PM</li>
-                                                <li><span>Saturday:</span>09:00 AM - 07:00PM </li>
-                                                <li><span>Sunday:</span>Closed </li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-
-                                    <div className="col-lg-3 col-md-6 col-6 m-b20">
-                                        
-                                        <div className="widget widget_services">
-                                            <h3 className="widget-title">Quick Links</h3>
-                                            <ul>
-                                                <li><a href="about-us.html">About us</a></li>
-                                                <li><a href="faq.html">FAQ’s</a></li>
-                                                <li><a href="service.html">Services</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="contact-us.html">Contact</a></li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-
-                                    <div className="col-lg-4 col-md-12 col-sm-12 m-b20">
-                                        
-                                        <div className="widget widget_services">
-                                            <h3 className="widget-title">Vehicles Type</h3>
-                                            <ul className="gris-2-column">
-                                                <li><a href="cars-detail.html">SUVs</a></li>
-                                                <li><a href="cars-detail.html">Sport Coupe</a></li>
-                                                <li><a href="cars-detail.html">Convertible</a></li>
-                                                <li><a href="cars-detail.html">Wagon</a></li>
-                                                <li><a href="cars-detail.html">Sedan</a></li>
-                                                <li><a href="cars-detail.html">Yamaha R15</a></li>
-                                                <li><a href="cars-detail.html">BMW S 1000 RR</a></li>
-                                                <li><a href="cars-detail.html">Kawasaki</a></li>
-                                                <li><a href="cars-detail.html">Hayabusa</a></li>
-                                                <li><a href="cars-detail.html">Harley Davidson</a></li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-    
-                                </div> 
-
-                                <div className="twm-subscribe-nl">
-                                    <div className="twm-nl-title">
-                                        Subscribe To Our Newsletter Today! 
-                                    </div>
-                                    <div className="twm-nl-section">
-                                        <form>
-                                            <div className="ftr-nw-form">
-                                                <input name="news-letter" className="form-control" placeholder="Email address..." type="text"/>
-                                                <button className="ftr-nw-subcribe-btn"><i className="feather feather-arrow-up-right"></i></button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-         
-            <div className="footer-bottom">
-                <div className="footer-bottom-info">
-                    <div className="footer-copy-right">
-                        <span className="copyrights-text">© 2024<span className="site-text-primary">Carntel</span> All  rights reserved.</span>
-                    </div>
-                </div>
-            </div>
-    
-        </footer>
 		<button className="scroltop"><span className="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
 
  	</div>
