@@ -18,9 +18,9 @@ const Footer = () => {
                                     We offer a range of the finest and most premium cars and bikes on rent.
                                 </div>
                                 <ul className="ftr-list">
-                                    <li><i className="feather feather-phone-call"></i><a href="tel:1236540214">123 654 0214</a></li>
-                                    <li><i className="feather feather-mail"></i>carntelinfo@gmail.com</li>
-                                    <li><i className="feather feather-home"></i>55/11 ronin tower New York</li>
+                                    <li><i className="feather feather-phone-call"></i><a href="tel:+642102720403">+642102720403</a></li>
+                                    <li><i className="feather feather-mail"></i>goqtowncarrentals@gmail.com</li>
+                                    {/* <li><i className="feather feather-home"></i>55/11 ronin tower New York</li> */}
                                 </ul>
                                 <div className="twm-social">
                                     <ul>
@@ -56,10 +56,10 @@ const Footer = () => {
                                         <div className="widget widget_services">
                                             <h3 className="widget-title">Quick Links</h3>
                                             <ul>
-                                                <li><a href="about-us.html">About us</a></li>
-                                                <li><a href="faq.html">FAQ’s</a></li>
-                                                <li><a href="service.html">Services</a></li>
-                                                <li><a href="team.html">Team</a></li>
+                                                <li><a href="about-us">About us</a></li>
+                                                <li><a href="faq">FAQ’s</a></li>
+                                                <li><a href="service">Services</a></li>
+                                                <li><a href="pricing">Pricing</a></li>
                                                 <li><a href="contact-us.html">Contact</a></li>
                                             </ul>
                                         </div>

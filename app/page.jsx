@@ -22,7 +22,7 @@ export default function Home() {
 
          
             <div className="twm-home-1-banner-wrap">
-                <div className="twm-home-1-banner bg-[url('/images/main-slider/slider1/slider1.jpg')] bg-cover bg-center">
+                <div className="twm-home-1-banner bg-black bg-center">
                     <div className="twm-banner-LR-wrap">
                         <div className="twm-banner-left">
                             <div className="twm-banner-left-info">
@@ -30,14 +30,14 @@ export default function Home() {
 
                                     <div className="twm-sm-title left">Premium</div>
                                     <h2 className="twm-banner-title">
-                                        <em className="txt-type" data-wait="3000" data-words='["The Best Rental", "Wide Range of"]'></em>
-                                        Cars<span>&</span>Bikes
+                                        <em data-wait="3000" data-words='["The Best Rental", "Wide Range of"]'></em>
+                                        Explore Queenstown with a Reliable Rental Car
                                     </h2>
 
                                     <div className="twm-banner-search-tabs">
 
                                         <h3 className="twm-tabs-title">
-                                            Available For Rent
+                                            Find the perfect car for your Queenstown trip.
                                         </h3>
 
                                         <div className="twm-banner-tabs-filter">
@@ -89,7 +89,7 @@ export default function Home() {
 
                                                         <form>
                                                             <div className="row m-b20">
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
+                                                                {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Choose Vehicle type</label>
                                                                         <select className="form-select form-control" aria-label="Default select example">
@@ -99,7 +99,7 @@ export default function Home() {
                                                                             <option value="3">Suzuki</option>
                                                                         </select>
                                                                     </div>
-                                                                </div>
+                                                                </div> */}
                                                                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Pick up Location</label>
@@ -162,7 +162,7 @@ export default function Home() {
     
                                                             <div className="twm-tabs-search-btn">
                                                                 <a href="cars-grid-4.html" className="site-button">
-                                                                    <em>Find A vehicle</em>
+                                                                    <em>Book Your Car</em>
                                                                 </a>
                                                             </div>
                                                         </form>
@@ -175,7 +175,7 @@ export default function Home() {
 
                                                         <form>
                                                             <div className="row m-b20">
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
+                                                                {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Choose Vehicle type</label>
                                                                         <select className="form-select form-control" aria-label="Default select example">
@@ -185,7 +185,7 @@ export default function Home() {
                                                                             <option value="3">Suzuki</option>
                                                                         </select>
                                                                     </div>
-                                                                </div>
+                                                                </div> */}
                                                                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Pick up Location</label>
@@ -248,7 +248,7 @@ export default function Home() {
     
                                                             <div className="twm-tabs-search-btn">
                                                                 <a href="cars-grid-4.html" className="site-button">
-                                                                    <em>Find A vehicle</em>
+                                                                    <em>Book Your Car</em>
                                                                 </a>
                                                             </div>
                                                         </form>
@@ -261,7 +261,7 @@ export default function Home() {
 
                                                         <form>
                                                             <div className="row m-b20">
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
+                                                                {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Choose Vehicle type</label>
                                                                         <select className="form-select form-control" aria-label="Default select example">
@@ -271,7 +271,7 @@ export default function Home() {
                                                                             <option value="3">Suzuki</option>
                                                                         </select>
                                                                     </div>
-                                                                </div>
+                                                                </div> */}
                                                                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Pick up Location</label>
@@ -334,7 +334,7 @@ export default function Home() {
     
                                                             <div className="twm-tabs-search-btn">
                                                                 <a href="cars-grid-4.html" className="site-button">
-                                                                    <em>Find A vehicle</em>
+                                                                    <em>Book Your Car</em>
                                                                 </a>
                                                             </div>
                                                         </form>
@@ -347,7 +347,7 @@ export default function Home() {
 
                                                         <form>
                                                             <div className="row m-b20">
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
+                                                                {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Choose Vehicle type</label>
                                                                         <select className="form-select form-control" aria-label="Default select example">
@@ -357,7 +357,7 @@ export default function Home() {
                                                                             <option value="3">Suzuki</option>
                                                                         </select>
                                                                     </div>
-                                                                </div>
+                                                                </div> */}
                                                                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Pick up Location</label>
@@ -420,7 +420,7 @@ export default function Home() {
     
                                                             <div className="twm-tabs-search-btn">
                                                                 <a href="cars-grid-4.html" className="site-button">
-                                                                    <em>Find A vehicle</em>
+                                                                    <em>Book Your Car</em>
                                                                 </a>
                                                             </div>
                                                         </form>
@@ -548,7 +548,7 @@ export default function Home() {
                         </div>
                         <div className="col-xl-2 col-lg-12">
                             <div className="twm-mid-section-btn">
-                                <a href="cars-grid-4.html" className="site-button">
+                                <a href="#" className="site-button">
                                     <em>View All Brands</em>
                                 </a>
                             </div>
@@ -564,70 +564,70 @@ export default function Home() {
                         <div className="item">
                             <div className="ow-client-logo">
                                 <div className="client-logo client-logo-media">
-                                <a href="cars-grid-4.html"><img src="images/client-logo/dark/w1.png" alt=""/></a></div>
+                                <a href="#"><img src="images/client-logo/dark/w1.png" alt=""/></a></div>
                             </div>
                         </div>
                         
                         <div className="item">
                             <div className="ow-client-logo">
                                 <div className="client-logo client-logo-media">
-                                <a href="cars-grid-4.html"><img src="images/client-logo/dark/w2.png" alt=""/></a></div>
+                                <a href="#"><img src="images/client-logo/dark/w2.png" alt=""/></a></div>
                             </div>
                         </div>
                         
                         <div className="item">
                             <div className="ow-client-logo">
                                 <div className="client-logo client-logo-media">
-                                <a href="cars-grid-4.html"><img src="images/client-logo/dark/w3.png" alt=""/></a></div>
+                                <a href="#"><img src="images/client-logo/dark/w3.png" alt=""/></a></div>
                             </div>
                         </div>
                         
                         <div className="item">
                             <div className="ow-client-logo">
                                 <div className="client-logo client-logo-media">
-                                <a href="cars-grid-4.html"><img src="images/client-logo/dark/w4.png" alt=""/></a></div>
+                                <a href="#"><img src="images/client-logo/dark/w4.png" alt=""/></a></div>
                             </div>
                         </div>
                         
                         <div className="item">
                             <div className="ow-client-logo">
                                 <div className="client-logo client-logo-media">
-                                <a href="cars-grid-4.html"><img src="images/client-logo/dark/w5.png" alt=""/></a></div>
+                                <a href="#"><img src="images/client-logo/dark/w5.png" alt=""/></a></div>
                             </div>
                         </div>
                         
                         <div className="item">
                             <div className="ow-client-logo">
                                 <div className="client-logo client-logo-media">
-                                <a href="cars-grid-4.html"><img src="images/client-logo/dark/w6.png" alt=""/></a></div>
+                                <a href="#"><img src="images/client-logo/dark/w6.png" alt=""/></a></div>
                             </div>
                         </div>
                         
                         <div className="item">
                             <div className="ow-client-logo">
                                 <div className="client-logo client-logo-media">
-                                <a href="cars-grid-4.html"><img src="images/client-logo/dark/w1.png" alt=""/></a></div>
+                                <a href="#"><img src="images/client-logo/dark/w1.png" alt=""/></a></div>
                             </div>
                         </div>
                         
                         <div className="item">
                             <div className="ow-client-logo">
                                 <div className="client-logo client-logo-media">
-                                <a href="cars-grid-4.html"><img src="images/client-logo/dark/w2.png" alt=""/></a></div>
+                                <a href="#"><img src="images/client-logo/dark/w2.png" alt=""/></a></div>
                             </div>
                         </div>
                         
                         <div className="item">
                             <div className="ow-client-logo">
                                 <div className="client-logo client-logo-media">
-                                <a href="cars-grid-4.html"><img src="images/client-logo/dark/w3.png" alt=""/></a></div>
+                                <a href="#"><img src="images/client-logo/dark/w3.png" alt=""/></a></div>
                             </div>
                         </div>
                         
                         <div className="item">
                             <div className="ow-client-logo">
                                 <div className="client-logo client-logo-media">
-                                <a href="cars-grid-4.html"><img src="images/client-logo/dark/w5.png" alt=""/></a></div>
+                                <a href="#"><img src="images/client-logo/dark/w5.png" alt=""/></a></div>
                             </div>
                         </div>
                         
@@ -643,17 +643,17 @@ export default function Home() {
                             <div className="twm-abus-left">
                                 <div className="twm-media">
                                     <img src="images/abus-pic1.png" alt="Image"/>
-                                    <div className="twm-abus-video">
+                                    {/* <div className="twm-abus-video">
                                         <a href="https://vimeo.com/337649532" className="mfp-video ">
                                             <i className="icon fa fa-play"></i>
                                         </a>
-                                    </div>
-                                    <div className="twm-abus-year-section">
+                                    </div> */}
+                                    {/* <div className="twm-abus-year-section">
                                         <div className="tem-abus-year-content">
                                             <span>Since</span>
                                             <h2 className="year-title">2016</h2>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 {/* <div className="twm-media2">
                                     <img src="images/car-pic.png" alt="Image"/>
@@ -687,7 +687,7 @@ export default function Home() {
                                 </ul>
                             </div>
                             <div className="twm-btn-left">
-                                <a href="about-us.html" className="site-button">
+                                <a href="about-us" className="site-button">
                                     <em>Read More</em>
                                 </a>
                              </div>
@@ -769,7 +769,7 @@ export default function Home() {
             </div>
             </div>
            
-            <div className="section-full p-t150 p-b120 site-bg-white twm-blog-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+            {/* <div className="section-full p-t150 p-b120 site-bg-white twm-blog-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container-fluid">
 
                    
@@ -782,7 +782,7 @@ export default function Home() {
                     
 
                     <div className="section-content">
-                        <div className="owl-carousel twm-vehicle-fleet-carousel m-b30">
+                        <div className="twm-vehicle-fleet-carousel m-b30">
                             
                           
                             <div className="item">
@@ -1018,16 +1018,16 @@ export default function Home() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
    
-            <div className="section-full site-bg-white twm-w-chooseus-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+            <div className="section-full site-bg-white twm-w-chooseus-section-wrap wow fadeInDown mt-20" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container">
                     <div className="row twm-w-chooseus-section">
                         <div className="col-lg-5 col-md-12">
                          
                             <div className="section-head left ">
                                 <div className="twm-sm-title left">Our Features</div>
-                                <h2 className="twm-large-title site-text-dark">Why Choose Us?</h2>
+                                <h2 className="twm-large-title site-text-dark">Why Choose Go Queenstown Car Rentals</h2>
                                 <div className="section-head-detail">
                                     Discover a world of convenience, safety, and customization, paving the way for unforgettable adventures and seamless mobility solutions.
                                 </div>
@@ -1043,9 +1043,8 @@ export default function Home() {
                                                 </span>
                                             </div>
                                             <div className="twm-icon-bx-detail">
-                                                <h3 className="twm-title">Deals For Every Budget</h3>
-                                                <p>Incredible prices on every car, van, bike and package 
-                                                    worldwide Book vehicles at incredible.
+                                                <h3 className="twm-title">Reliable Vehicles</h3>
+                                                <p>Our fleet includes trusted brands like Toyota, Suzuki, Subaru, and Mitsubishi to ensure a safe and comfortable journey.
                                                 </p>
                                             </div>
                                         </div>
@@ -1058,9 +1057,8 @@ export default function Home() {
                                                 </span>
                                             </div>
                                             <div className="twm-icon-bx-detail">
-                                                <h3 className="twm-title">Flexible Pricing</h3>
-                                                <p>customization, paving the way for unforgettable
-                                                    adventures seamless mobility solutions.
+                                                <h3 className="twm-title">Transparent Pricing</h3>
+                                                <p>No hidden surprises. Clear pricing with basic insurance included.
                                                 </p>
                                             </div>
                                         </div>
@@ -1073,9 +1071,8 @@ export default function Home() {
                                                 </span>
                                             </div>
                                             <div className="twm-icon-bx-detail">
-                                                <h3 className="twm-title">Quality At Minimum Expense</h3>
-                                                <p>customization, paving the way for unforgettable
-                                                    adventures seamless mobility solutions.
+                                                <h3 className="twm-title">Tourist-Friendly Service</h3>
+                                                <p>Most of our vehicles are automatic, making them easy to drive for international travelers.
                                                 </p>
                                             </div>
                                         </div>
@@ -1088,9 +1085,8 @@ export default function Home() {
                                                 </span>
                                             </div>
                                             <div className="twm-icon-bx-detail">
-                                                <h3 className="twm-title">Free Pick-Up & Drop-Off</h3>
-                                                <p>Enjoy free pickup and drop-off services, adding an
-                                                    extra layer of ease to your car rental experience.
+                                                <h3 className="twm-title">Easy Booking</h3>
+                                                <p>Choose your dates, select a vehicle, and send a booking request online in minutes
                                                 </p>
                                             </div>
                                         </div>
@@ -1106,7 +1102,7 @@ export default function Home() {
                                 <div className="twm-need-help-bx">
                                     <div className="twm-need-help-content">
                                         <span>Need any help ?</span>
-                                        <h3 className="twm-title">+71 202 102 2124</h3>
+                                        <h3 className="twm-title">+642102720403</h3>
                                     </div>
                                     <div className="twm-need-help-icon">
                                         <img src="images/24-clock.png" alt="icon"/>
@@ -1118,7 +1114,7 @@ export default function Home() {
                 </div>
             </div>
             
-            <div className="section-full p-t150 site-bg-white twm-categories-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+            <div className="section-full p-t150 site-bg-white wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container">
 
                     <div className="row">
@@ -1126,21 +1122,21 @@ export default function Home() {
                             
                             <div className="section-head left ">
                                 <div className="twm-sm-title left">Categories</div>
-                                <h2 className="twm-large-title site-text-dark">A Look At All Types Of Vehicles</h2>
+                                <h2 className="twm-large-title site-text-dark">Our Vehicles</h2>
                             </div>
                           
                         </div>
                     </div>
 
                     <div className="section-content">
-                        <div className="owl-carousel twm-categories-carousel next-prev-top-right">
+                        <div className="flex md:flex-row flex-col gap-4">
                            
                             <div className="item">
-                                <div className="twm-categories-type">
-                                    <div className="twm-media">
+                                <div className="twm-categories-type relative">
+                                    <div className="twm-media border">
                                         <img src="images/vehicle/pic13.jpg" alt="Image"/>
-                                        <div className="twm-media-link">
-                                            <a href="cars-detail.html" className="twm-media-link-content">SUV</a>
+                                        <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
+                                            <p className="text-lg font-medium">Small Cars</p>
                                         </div>
                                     </div>
                                 </div> 
@@ -1148,11 +1144,11 @@ export default function Home() {
 
                             
                             <div className="item">
-                                <div className="twm-categories-type">
-                                    <div className="twm-media">
+                                <div className="twm-categories-type relative">
+                                    <div className="twm-media border">
                                         <img src="images/vehicle/pic8.jpg" alt="Image"/>
-                                        <div className="twm-media-link">
-                                            <a href="cars-detail.html" className="twm-media-link-content">Sedan</a>
+                                        <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
+                                            <p className="text-lg font-medium">Sedans</p>
                                         </div>
                                     </div>
                                 </div> 
@@ -1160,46 +1156,11 @@ export default function Home() {
 
                            
                             <div className="item">
-                                <div className="twm-categories-type">
-                                    <div className="twm-media">
+                                <div className="twm-categories-type relative">
+                                    <div className="twm-media border">
                                         <img src="images/vehicle/pic14.jpg" alt="Image"/>
-                                        <div className="twm-media-link">
-                                            <a href="cars-detail.html" className="twm-media-link-content">Harley Davidson</a>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-
-                            <div className="item">
-                                <div className="twm-categories-type">
-                                    <div className="twm-media">
-                                        <img src="images/vehicle/pic6.jpg" alt="Image"/>
-                                        <div className="twm-media-link">
-                                            <a href="cars-detail.html" className="twm-media-link-content">Hatchback</a>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-
-                        
-                            <div className="item">
-                                <div className="twm-categories-type">
-                                    <div className="twm-media">
-                                        <img src="images/vehicle/pic3.jpg" alt="Image"/>
-                                        <div className="twm-media-link">
-                                            <a href="cars-detail.html" className="twm-media-link-content">Coupe</a>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-
-                           
-                            <div className="item">
-                                <div className="twm-categories-type">
-                                    <div className="twm-media">
-                                        <img src="images/vehicle/pic5.jpg" alt="Image"/>
-                                        <div className="twm-media-link">
-                                            <a href="cars-detail.html" className="twm-media-link-content">Hybrid</a>
+                                        <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
+                                            <p className="text-lg font-medium">SUVs</p>
                                         </div>
                                     </div>
                                 </div> 
@@ -1285,422 +1246,7 @@ export default function Home() {
 
                 </div>
             </div>
-{/*      
-            <div className="section-full p-t150 site-bg-white twm-testimonial-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
-                <div className="container">
-
-                    <div className="row">
-                        <div className="col-lg-6 col-md-12">
-                           
-                            <div className="section-head left ">
-                                <div className="twm-sm-title left">Testimonial</div>
-                                <h2 className="twm-large-title site-text-dark">What Our Customers Say</h2>
-                            </div>
-                           
-                        </div>
-                    </div>
-
-                    <div className="section-content">
-                        <div className="owl-carousel twm-blog-carousel next-prev-top-right">
-                            
-                        
-                            <div className="item">
-                                <div className="twm-testimonial2">
-                                    <div className="twm-testimonial-head">
-                                        <div className="media-pic">
-                                            <img src="images/testimonial/pic1.jpg" alt="Image"/>
-                                        </div>
-                                        <div className="twm-author-detail">
-                                            <h3 className="twm-title">Kevin Martin</h3>
-                                            <div className="twm-position">Customer</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="twm-testimonial-detail">
-                                        <p>I Was Very Impresed Lorem posuere in miss and drana 
-                                            en the nisan semere sceriun amiss etiam ornare in 
-                                            the miss drana is lorem fermen mauris.
-                                        </p>
-                                        <div className="twm-rating-wrap">
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                        </div> 
-                                    </div>
-                                        
-                                    <div className="twm-quote-icon">
-                                        <img src="images/quote.png" alt="#"/>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                            <div className="item">
-                                <div className="twm-testimonial2">
-                                    <div className="twm-testimonial-head">
-                                        <div className="media-pic">
-                                            <img src="images/testimonial/pic2.jpg" alt="Image"/>
-                                        </div>
-                                        <div className="twm-author-detail">
-                                            <h3 className="twm-title">Devid Cullen</h3>
-                                            <div className="twm-position">Customer</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="twm-testimonial-detail">
-                                        <p>I Was Very Impresed Lorem posuere in miss and drana 
-                                            en the nisan semere sceriun amiss etiam ornare in 
-                                            the miss drana is lorem fermen mauris.
-                                        </p>
-                                        <div className="twm-rating-wrap">
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                        </div> 
-                                    </div>
-                                        
-                                    <div className="twm-quote-icon">
-                                        <img src="images/quote.png" alt="#"/>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                          
-                            <div className="item">
-                                <div className="twm-testimonial2">
-                                    <div className="twm-testimonial-head">
-                                        <div className="media-pic">
-                                            <img src="images/testimonial/pic3.jpg" alt="Image"/>
-                                        </div>
-                                        <div className="twm-author-detail">
-                                            <h3 className="twm-title">Piter Has</h3>
-                                            <div className="twm-position">Customer</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="twm-testimonial-detail">
-                                        <p>I Was Very Impresed Lorem posuere in miss and drana 
-                                            en the nisan semere sceriun amiss etiam ornare in 
-                                            the miss drana is lorem fermen mauris.
-                                        </p>
-                                        <div className="twm-rating-wrap">
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                        </div> 
-                                    </div>
-                                        
-                                    <div className="twm-quote-icon">
-                                        <img src="images/quote.png" alt="#"/>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                          
-                            <div className="item">
-                                <div className="twm-testimonial2">
-                                    <div className="twm-testimonial-head">
-                                        <div className="media-pic">
-                                            <img src="images/testimonial/pic1.jpg" alt="Image"/>
-                                        </div>
-                                        <div className="twm-author-detail">
-                                            <h3 className="twm-title">Kevin Martin</h3>
-                                            <div className="twm-position">Customer</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="twm-testimonial-detail">
-                                        <p>I Was Very Impresed Lorem posuere in miss and drana 
-                                            en the nisan semere sceriun amiss etiam ornare in 
-                                            the miss drana is lorem fermen mauris.
-                                        </p>
-                                        <div className="twm-rating-wrap">
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                        </div> 
-                                    </div>
-                                        
-                                    <div className="twm-quote-icon">
-                                        <img src="images/quote.png" alt="#"/>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                           
-                            <div className="item">
-                                <div className="twm-testimonial2">
-                                    <div className="twm-testimonial-head">
-                                        <div className="media-pic">
-                                            <img src="images/testimonial/pic2.jpg" alt="Image"/>
-                                        </div>
-                                        <div className="twm-author-detail">
-                                            <h3 className="twm-title">Devid Cullen</h3>
-                                            <div className="twm-position">Customer</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="twm-testimonial-detail">
-                                        <p>I Was Very Impresed Lorem posuere in miss and drana 
-                                            en the nisan semere sceriun amiss etiam ornare in 
-                                            the miss drana is lorem fermen mauris.
-                                        </p>
-                                        <div className="twm-rating-wrap">
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                        </div> 
-                                    </div>
-                                        
-                                    <div className="twm-quote-icon">
-                                        <img src="images/quote.png" alt="#"/>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                      
-                            <div className="item">
-                                <div className="twm-testimonial2">
-                                    <div className="twm-testimonial-head">
-                                        <div className="media-pic">
-                                            <img src="images/testimonial/pic3.jpg" alt="Image"/>
-                                        </div>
-                                        <div className="twm-author-detail">
-                                            <h3 className="twm-title">Piter Has</h3>
-                                            <div className="twm-position">Customer</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="twm-testimonial-detail">
-                                        <p>I Was Very Impresed Lorem posuere in miss and drana 
-                                            en the nisan semere sceriun amiss etiam ornare in 
-                                            the miss drana is lorem fermen mauris.
-                                        </p>
-                                        <div className="twm-rating-wrap">
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                            <span><i className="fa fa-star"></i></span>
-                                        </div> 
-                                    </div>
-                                        
-                                    <div className="twm-quote-icon">
-                                        <img src="images/quote.png" alt="#"/>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div> */}
-            <div className="section-full p-t150 p-b120 site-bg-white twm-blog-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
-                <div className="container-fluid">
-
-                   
-              
-                    <div className="section-head center ">
-                        <div className="twm-sm-title left">From the Blog</div>
-                        <h2 className="twm-large-title site-text-dark">Car And Bike Rental News</h2>
-                    </div>
-              
-                    
-
-                    <div className="section-content">
-                        <div className="owl-carousel twm-blog-carousel m-b30">
-                            
-                        
-                            <div className="item">
-                                <div className="twm-lt-blog">
-                                    <div className="wt-post-media">
-                                        <a href="blog-detail.html"><img src="images/blog/latest/bg1.jpg" alt=""/></a>
-                                    </div>
-                                    <div className="twm-post-info-wrap">
-                                        <div className="post-date-wrap">
-                                            <div className="post-date">
-                                                <span className="date">14</span>
-                                                <span className="month">June</span>
-                                            </div>
-                                        </div>                                  
-                                        <div className="twm-post-info">
-                                            
-                                            <div className="post-author">
-                                                <a className="au-name" href="blog-detail.html">by Mike Hardson</a>
-                                            </div>
-                                            
-                                            <h3 className="post-title">
-                                                <a href="blog-detail.html">Your Perfect Memorial Day Weekend Getaway with Carntel</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                          
-                            <div className="item">
-                                <div className="twm-lt-blog">
-                                    <div className="wt-post-media">
-                                        <a href="blog-detail.html"><img src="images/blog/latest/bg2.jpg" alt=""/></a>
-                                    </div>
-                                    <div className="twm-post-info-wrap">
-                                        <div className="post-date-wrap">
-                                            <div className="post-date">
-                                                <span className="date">18</span>
-                                                <span className="month">July</span>
-                                            </div>
-                                        </div>                                  
-                                        <div className="twm-post-info">
-                                            
-                                            <div className="post-author">
-                                                <a className="au-name" href="blog-detail.html">by Devid Culun</a>
-                                            </div>
-                                            
-                                            <h3 className="post-title">
-                                                <a href="blog-detail.html">The Ultimate Checklist for a Successful Car Rental Adventure</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                      
-                            <div className="item">
-                                <div className="twm-lt-blog">
-                                    <div className="wt-post-media">
-                                        <a href="blog-detail.html"><img src="images/blog/latest/bg3.jpg" alt=""/></a>
-                                    </div>
-                                    <div className="twm-post-info-wrap">
-                                        <div className="post-date-wrap">
-                                            <div className="post-date">
-                                                <span className="date">26</span>
-                                                <span className="month">Sep</span>
-                                            </div>
-                                        </div>                                  
-                                        <div className="twm-post-info">
-                                            
-                                            <div className="post-author">
-                                                <a className="au-name" href="blog-detail.html">by Kevin Smith</a>
-                                            </div>
-                                            
-                                            <h3 className="post-title">
-                                                <a href="blog-detail.html">Tips for Renting the Perfect Car for Your Family Vacation</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                            <div className="item">
-                                <div className="twm-lt-blog">
-                                    <div className="wt-post-media">
-                                        <a href="blog-detail.html"><img src="images/blog/latest/bg4.jpg" alt=""/></a>
-                                    </div>
-                                    <div className="twm-post-info-wrap">
-                                        <div className="post-date-wrap">
-                                            <div className="post-date">
-                                                <span className="date">14</span>
-                                                <span className="month">June</span>
-                                            </div>
-                                        </div>                                  
-                                        <div className="twm-post-info">
-                                            
-                                            <div className="post-author">
-                                                <a className="au-name" href="blog-detail.html">by Mike Hardson</a>
-                                            </div>
-                                            
-                                            <h3 className="post-title">
-                                                <a href="blog-detail.html">Your Perfect Memorial Day Weekend Getaway with Carntel</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                            <div className="item">
-                                <div className="twm-lt-blog">
-                                    <div className="wt-post-media">
-                                        <a href="blog-detail.html"><img src="images/blog/latest/bg5.jpg" alt=""/></a>
-                                    </div>
-                                    <div className="twm-post-info-wrap">
-                                        <div className="post-date-wrap">
-                                            <div className="post-date">
-                                                <span className="date">18</span>
-                                                <span className="month">July</span>
-                                            </div>
-                                        </div>                                  
-                                        <div className="twm-post-info">
-                                            
-                                            <div className="post-author">
-                                                <a className="au-name" href="blog-detail.html">by Devid Culun</a>
-                                            </div>
-                                            
-                                            <h3 className="post-title">
-                                                <a href="blog-detail.html">The Ultimate Checklist for a Successful Car Rental Adventure</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-
-                           
-                            <div className="item">
-                                <div className="twm-lt-blog">
-                                    <div className="wt-post-media">
-                                        <a href="blog-detail.html"><img src="images/blog/latest/bg6.jpg" alt=""/></a>
-                                    </div>
-                                    <div className="twm-post-info-wrap">
-                                        <div className="post-date-wrap">
-                                            <div className="post-date">
-                                                <span className="date">26</span>
-                                                <span className="month">Sep</span>
-                                            </div>
-                                        </div>                                  
-                                        <div className="twm-post-info">
-                                            
-                                            <div className="post-author">
-                                                <a className="au-name" href="blog-detail.html">by Kevin Smith</a>
-                                            </div>
-                                            
-                                            <h3 className="post-title">
-                                                <a href="blog-detail.html">Tips for Renting the Perfect Car for Your Family Vacation</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    
-                                </div> 
-                            </div>
-                            
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
+        
      
         </div>
 		<button className="scroltop"><span className="fa fa-angle-up  relative" id="btn-vibrate"></span></button>

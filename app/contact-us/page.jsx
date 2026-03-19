@@ -52,7 +52,7 @@ const page = () => {
                                                     </div>
                                                     <div className="twm-content">
                                                         <p>Phone</p>
-                                                        <h3 className="twm-title"><a href="tel:456-789-1012">456 789 1012</a></h3>
+                                                        <h3 className="twm-title"><a href="tel:456-789-1012">642102720403</a></h3>
                                                     </div>
                                                 </div>
                                             </li>
@@ -64,12 +64,12 @@ const page = () => {
                                                     </div>
                                                     <div className="twm-content">
                                                         <p>Email</p>
-                                                        <h3 className="twm-title">carntelinfo@gmail.com</h3>
+                                                        <h3 className="twm-title">goqtowncarrentals@gmail.com</h3>
                                                     </div>
                                                 </div>
                                             </li>
             
-                                            <li>
+                                            {/* <li>
                                                 <div className="twm-get-info">
                                                     <div className="twm-media">
                                                         <i className="feather feather-home"></i>
@@ -79,7 +79,7 @@ const page = () => {
                                                         <h3 className="twm-title">55/11 ronin tower New York</h3>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </li> */}
             
                                         </ul>
 
@@ -99,9 +99,9 @@ const page = () => {
                                     <div className="twm-contact-page-detail">
                                      
                                         <div className="section-head left ">
-                                            <h2 className="twm-large-title">Contact Form</h2>
-                                            <p className="p-text">Enter your details. And you can feel free to contact 
-                                                us for any kind of information.
+                                            <h2 className="twm-large-title">Contact Us</h2>
+                                            <p className="p-text">Have questions or need help with your booking?
+                                                Our team is happy to assist.
                                             </p>
                                         </div>
                 
@@ -168,11 +168,11 @@ const page = () => {
             </div>   
           
 
-            <div className="gmap-outline">
+            {/* <div className="gmap-outline">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6309.495304446196!2d-122.43885472228101!3d37.74906395235639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e12a1d66d03%3A0xb8c905ae4e81369b!2sQ-Architecture!5e0!3m2!1sen!2sin!4v1623689156327!5m2!1sen!2sin"  style={{border:0}} allowFullScreen="" loading="lazy"></iframe>
-            </div> 
+            </div>  */}
 
-            <div className="section-full p-b120">
+            {/* <div className="section-full p-b120">
                 <div className="container">
                     <div className="section-content">
                         <div className="twm-get-info-section">
@@ -190,7 +190,7 @@ const page = () => {
                                                     </div>
                                                     <div className="twm-content">
                                                         <p>Phone</p>
-                                                        <h3 className="twm-title"><a href="tel:456-789-1012">456 789 1012</a></h3>
+                                                        <h3 className="twm-title"><a href="tel:456-789-1012">642102720403</a></h3>
                                                     </div>
                                                 </div>
                                             </li>
@@ -318,7 +318,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
         </div>

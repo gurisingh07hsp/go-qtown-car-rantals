@@ -1,8 +1,10 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 
 const Navbar = () => {
+    const [isopen, setIsOpen] = useState(false);
   return (
-            <header className="site-header header-style-1 mobile-sider-drawer-menu light-hdr">
+            <header className="site-header header-style-1 mobile-sider-drawer-menu light-hdr sticky top-0 z-50 bg-white">
 
             <div className="">     
                 <div className="header-middle main-bar">
@@ -21,7 +23,7 @@ const Navbar = () => {
     
                                     <div className="navigation-bar">
                                         
-                                        <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button" className="navbar-toggler collapsed">
+                                        <button onClick={()=> setIsOpen(true)} type="button" className="navbar-toggler collapsed">
                                             <span className="sr-only">Toggle navigation</span>
                                             <span className="icon-bar icon-bar-first"></span>
                                             <span className="icon-bar icon-bar-two"></span>
@@ -32,47 +34,11 @@ const Navbar = () => {
                                         <div className="nav-animation header-nav navbar-collapse d-flex justify-content-between">
                                     
                                             <ul className="nav navbar-nav">
-                                                <li className="has-child"><a href="/">Home</a>
-                                                    {/* <ul className="sub-menu">
-                                                        <li><a href="/">Home 1</a></li>
-                                                        <li><a href="/">Home 2</a></li>
-                                                    </ul>                                                                  */}
-                                                </li>
+                                                <li><a href="/">Home</a></li>
                                                 <li><a href="about-us">About</a></li>
-                                                <li className="has-child">
-                                                    <a href="cars">Cars</a>
-                                                    {/* <ul className="sub-menu">
-                                                        <li><a href="cars">Cars</a></li>
-                                                        <li><a href="cars-grid-1.html">Cars Grid 1</a></li>
-                                                        <li><a href="cars-grid-2.html">Cars Grid 2</a></li>
-                                                        <li><a href="cars-grid-3.html">Cars Grid 3</a></li>
-                                                        <li><a href="cars-grid-4.html">Cars Grid 4</a></li> 
-                                                        <li><a href="cars-detail.html">Cars Detail</a></li>                                              
-                                                    </ul>                                 */}
-                                                </li>
+                                                <li><a href="cars">Cars</a></li>
                                                 <li><a href="services">Services</a></li>
-                                                {/* <li className="has-child">
-                                                    <a href="javascript:;">Pages</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="dealer-list.html">Dealers</a></li>
-                                                        <li><a href="error-404.html">Error 404 </a></li>
-                                                        <li><a href="faq.html">Faq</a></li>
-                                                        <li><a href="gallery.html">Gallery</a></li>
-                                                        <li><a href="plans.html">Plans</a></li> 
-                                                        <li><a href="team.html">Team</a></li>
-                                                        <li><a href="team-detail.html">Team Detail</a></li>
-                                                        <li><a href="testimonial.html">Testimonials</a></li>                                             
-                                                    </ul>                           
-                                                </li> */}
-                                                <li className="has-child">
-                                                    <a href="javascript:;">Blog</a>
-                                                    {/* <ul className="sub-menu">
-                                                        <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                        <li><a href="blog-list.html">Blog List</a></li>
-                                                        <li><a href="blog-detail.html">Blog Detail</a></li>
-                                                    </ul>                            */}
-                                                </li>
+                                                <li><a href="pricing">Pricing</a></li>
                                                 <li><a href="contact-us">Contact</a></li>  
                                             </ul>
                 
@@ -90,13 +56,13 @@ const Navbar = () => {
                         <div className="extra-cell one">
                             <ul className="wt-topbar-left-info">
                                 <li>
-                                    <a href="tel:+712021022525">
-                                        <span><i className="feather feather-mail"></i></span>+71 202 102 2525
+                                    <a href="mailto:goqtowncarrentals@gmail.com">
+                                        <span><i className="feather feather-mail"></i></span>goqtowncarrentals@gmail.com
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:someone@example.com">
-                                        <span><i className="feather feather-phone-call"></i></span>carntelinfo@gmail.com
+                                    <a href="tel:+642102720403">
+                                        <span><i className="feather feather-phone-call"></i></span>+642102720403
                                     </a>
                                 </li>
                             </ul>   
@@ -106,6 +72,31 @@ const Navbar = () => {
                     
                 </div>
             </div>
+
+             {isopen && (
+                <>
+                    {/* Backdrop overlay */}
+                    <div 
+                        className='fixed inset-0 bg-black bg-opacity-40 z-40'
+                        onClick={() => setIsOpen(false)}
+                    />
+                    
+                    {/* Drawer */}
+                    <div className='fixed top-0 left-0 h-screen w-full bg-white z-50 overflow-y-auto'>
+                        <ul className='space-y-4 mt-2'>
+                            <li className='p-2 border-b border-gray-300 flex justify-between'>
+                                <a href="/">Home</a>
+                                <button onClick={()=>setIsOpen(false)} className='me-4 font-semibold'>X</button>
+                            </li>
+                            <li className='p-2 border-b border-gray-300'><a href="about-us">About</a></li>
+                            <li className='p-2 border-b border-gray-300'><a href="cars">Cars</a></li>
+                            <li className='p-2 border-b border-gray-300'><a href="services">Services</a></li>
+                            <li className='p-2 border-b border-gray-300'><a href="pricing">Pricing</a></li>
+                            <li className='p-2 border-b border-gray-300'><a href="contact-us">Contact</a></li>  
+                        </ul>
+                    </div>
+                </>
+            )}
         </header>
   )
 }

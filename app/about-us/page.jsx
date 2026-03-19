@@ -173,7 +173,7 @@ const page = () => {
 
                 
             </div>
-            <div className="section-full p-t150 p-b120 site-bg-white twm-testimonial-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+            {/* <div className="section-full p-t150 p-b120 site-bg-white twm-testimonial-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container">
 
                     <div className="row">
@@ -546,8 +546,8 @@ const page = () => {
                     </div>
 
                 </div>
-            </div>
-            <div className="section-full p-t150  p-b120 site-bg-dark twm-testimonial-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+            </div> */}
+            {/* <div className="section-full p-t150  p-b120 site-bg-dark twm-testimonial-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container">
 
                     <div className="row">
@@ -764,7 +764,7 @@ const page = () => {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
      
             <div className="section-full site-bg-light twm-abus-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="row">
@@ -774,43 +774,43 @@ const page = () => {
                             <div className="section-head left">
                                 <div className="twm-sm-title left">About Us</div>
                                 <h2 className="twm-large-title site-text-dark">
-                                    We Have Many Provided 
-                                    Assistance To People And 
-                                    Companies In This Field
+                                    About Go Queenstown Car Rentals
                                 </h2>
                                 <div className="section-head-detail">
-                                    I must explain to you how all this mistaken idea of denouncing pleasure 
-                                    and praising pain was born and I will give you a complete account of the 
-                                    system, and expound the actual teachings of the great explorer of the 
-                                    truth, the master-builder of human happiness. No one rejects, dislikes, 
-                                    or avoids pleasure itself, because it is pleasure,
+                                    <p>Go Queenstown Car Rentals was created to make car rentals simple, reliable, and affordable for travelers visiting Queenstown</p>
+                                    <p>We understand that many visitors want the freedom to explore New Zealand at their own pace. Having the right vehicle makes that journey easier and more enjoyable.</p>
+                                    <p>Our fleet includes reliable vehicles from trusted brands such as Toyota,suzuki ,  Subaru, and Mitsubishi. These vehicles are comfortable, easy to drive, and perfect for road trips across New Zealand.</p>
                                 </div>
                             </div>
                           
                             <div className="twm-inline-list2">
                                 <ul>
-                                    <li>All Type Vehicle Available</li>
-                                    <li>You Get 24/7 Roadside Assistance</li>
-                                    <li>We Are The UK’s Largest Provider</li>
+                                    <li>Reliable vehicles</li>
+                                    <li>Transparent pricing</li>
+                                    <li>Easy online booking</li>
+                                    <li>Friendly customer service</li>
                                 </ul>
                             </div>
-                            <div className="twm-btn-left">
+                            <div>
+                                <p>Whether you are visiting Queenstown for a holiday, a family trip, or an adventure tour, we aim to make your travel experience smooth and stress-free.</p>
+                            </div>
+                            {/* <div className="twm-btn-left">
                                 <a href="about-us.html" className="site-button">
                                     <em>Read More</em>
                                 </a>
-                            </div>
+                            </div> */}
                             <div className="twm-abus2-left">
                                 <div className="twm-abus-video">
                                     <a href="https://vimeo.com/337649532" className="mfp-video ">
                                         <i className="icon fa fa-play"></i>
                                     </a>
                                 </div>
-                                <div className="twm-abus2-year-section">
+                                {/* <div className="twm-abus2-year-section">
                                     <div className="tem-abus-year-content">
                                         <span>Since</span>
                                         <h2 className="year-title">2016</h2>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
