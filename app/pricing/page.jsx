@@ -18,7 +18,7 @@ const page = () => {
 
 	<div className="page-wraper">
         <div className="page-content">
-            <div className="wt-bnr-inr site-bg-dark  twm-primary-overlay-wrap bg-[url('/images/main-slider/slider1/slider1.jpg')]">
+            <div className="wt-bnr-inr site-bg-dark  twm-primary-overlay-wrap bg-[url('/images/banner/heroImageOfEveryPage.jpg')]">
                 <div className="twm-primary-overlay"></div>
                 <div className="container">
                     <div className="wt-bnr-inr-entry">
@@ -84,7 +84,7 @@ const page = () => {
                                             </div>
                                         </div>
                                         <div className="twm-vehicle-fleet-content">
-                                            <h3 className="twm-v-title"><a href="cars-detail.html">Mini Cooper</a></h3>
+                                            <h3 className="twm-v-title"><a href="cars-detail.html">SUVs</a></h3>
                                         </div>
                                     </div> 
                                 </div>

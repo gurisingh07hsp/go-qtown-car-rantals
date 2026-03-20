@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import '../../public/css/animate.min.css'
 import '../../public/css/feather.css'
 import '../../public/css/lc_lightbox.css'
@@ -7,6 +8,18 @@ import '../../public/css/magnific-popup.min.css'
 import '../../public/css/bootstrap.min.css'
 import '../../public/css/style.css'
 const page = () => {
+    const [openId, setOpenId] = useState(null);
+
+    const toggle = (id) => setOpenId(openId === id ? null : id);
+
+    const faqs = [
+    { id: 1, question: "What documents are required to rent a car?", answer: "A valid driver’s license and identification are required." },
+    { id: 2, question: "Do you offer automatic vehicles?", answer: "Yes. Most of our vehicles are automatic and suitable for international drivers." },
+    { id: 3, question: "Is insurance included?", answer: "Yes, standard insurance is included in the rental price." },
+    { id: 4, question: "Do I need to pay a security deposit?", answer: "Yes. A refundable security deposit may be required at the start of the rental" },
+    { id: 5, question: "Can I book a vehicle online?", answer: "Yes. You can send a booking request directly through our website." },
+    ];
+
   return (
     <div>
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
@@ -19,7 +32,7 @@ const page = () => {
         <div className="page-content">
 
       
-            <div className="wt-bnr-inr site-bg-dark  twm-primary-overlay-wrap bg-[url('/images/banner/banner-4.jpg')]">
+            <div className="wt-bnr-inr site-bg-dark  twm-primary-overlay-wrap bg-[url('/images/banner/heroImageOfEveryPage.jpg')]">
                 <div className="twm-primary-overlay"></div>
                 <div className="container">
                     <div className="wt-bnr-inr-entry">
@@ -53,8 +66,57 @@ const page = () => {
                                     </div>
                                     
                                     
-                                    <div className="twm-faq-info">
-                                        <div className="accordion twm-acdn" id="sf-faq-accordion">
+                                    <div className="twm-faq-info h-full">
+                                            <div className="accordion twm-acdn" id="sf-faq-accordion">
+                                                      <div>
+        {faqs.map((faq) => {
+          const isOpen = openId === faq.id;
+          return (
+            <div
+              key={faq.id}
+              className="border px-2 rounded-2xl mt-2 border-black first:border-t first:border-black"
+            >
+              <button
+                onClick={() => toggle(faq.id)}
+                className="w-full flex items-center justify-between gap-4 py-4 text-left group"
+              >
+                <span
+                  className={`font-medium text-base transition-colors duration-200 ${
+                    isOpen ? "text-orange-500" : "text-black group-hover:text-orange-500"
+                  }`}
+                >
+                  {faq.question}
+                </span>
+
+                {/* +/- Icon */}
+                <span className="shrink-0 w-8 h-8 rounded-full border border-black group-hover:border-orange-500/60 flex items-center justify-center bg-white/5 transition-colors duration-200">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="black">
+                    <line x1="1" y1="6" x2="11" y2="6" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
+                    <line
+                      x1="6" y1="1" x2="6" y2="11"
+                      stroke="black" strokeWidth="1.5" strokeLinecap="round"
+                      className="transition-all duration-300 origin-center"
+                      style={{ transform: isOpen ? "rotate(90deg) scaleY(0)" : "rotate(0deg) scaleY(1)", opacity: isOpen ? 0 : 1 }}
+                    />
+                  </svg>
+                </span>
+              </button>
+
+              {/* Answer */}
+              <div
+                className="overflow-hidden transition-all duration-300 ease-in-out"
+                style={{ maxHeight: isOpen ? "200px" : "0px" }}
+              >
+                <p className="text-gray-600 text-sm leading-relaxed pb-5 ps-4">
+                  {faq.answer}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+                                            </div>
+                                        {/* <div className="accordion twm-acdn" id="sf-faq-accordion">
                                             <div className="accordion-item">
                                                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ1" aria-expanded="true" >
                                                     What documents are required to rent a car?
@@ -123,23 +185,7 @@ const page = () => {
                                                 </div>
                                             </div>
 
-                                          
-                                            {/* <div className="accordion-item">
-                                                
-                                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ6" aria-expanded="false">
-                                                    How do I know when I need a tune up?
-                                                </button>
-                    
-                                                <div id="FAQ6" className="accordion-collapse collapse"  data-bs-parent="#sf-faq-accordion">
-                                                    <div className="accordion-body">
-                                                        Lorem pretium fermentum quam, sit amet cursus ante sollicitudin velen morbi consesua the miss sustion consation miss orcisition amet iaculis nisan. Lorem pretium fermentum quam sit amet cursus ante sollicitudin velen fermen orbinetion consesua the risus consequation the porttiton.
-                                                    </div>
-                                                </div>
-                                            </div> */}
-                    
-                                            
-                    
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

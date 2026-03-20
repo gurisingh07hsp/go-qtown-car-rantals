@@ -12,7 +12,7 @@ const Footer = () => {
                             
                             <div className="widget widget_about">
                                 <div className="logo-footer clearfix">
-                                    <a href="index.html"><img src="images/logo-f.png" alt="Image"/></a>
+                                    <a href="index.html"><img src="images/goqtownlogo.png" alt="Image"/></a>
                                 </div>
                                 <div className="f-about-info">
                                     We offer a range of the finest and most premium cars and bikes on rent.
@@ -59,7 +59,7 @@ const Footer = () => {
                                                 <li><a href="about-us">About us</a></li>
                                                 <li><a href="faq">FAQ’s</a></li>
                                                 <li><a href="service">Services</a></li>
-                                                <li><a href="pricing">Pricing</a></li>
+                                                <li><a href="insurance">Insurance</a></li>
                                                 <li><a href="contact-us.html">Contact</a></li>
                                             </ul>
                                         </div>

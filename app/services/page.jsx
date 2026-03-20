@@ -129,7 +129,7 @@ const page = () => {
             
         </header> */}
         <div className="page-content">
-            <div className="wt-bnr-inr site-bg-dark  twm-primary-overlay-wrap url(images/banner/banner-13.jpg)">
+            <div className="wt-bnr-inr site-bg-dark  twm-primary-overlay-wrap bg-[url('/images/banner/heroImageOfEveryPage.jpg')]">
                 <div className="twm-primary-overlay"></div>
                 <div className="container">
                     <div className="wt-bnr-inr-entry">

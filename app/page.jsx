@@ -1172,6 +1172,46 @@ export default function Home() {
 
                 </div>
             </div>
+
+
+            <div className="section-full p-t150 site-bg-white wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+                <div className="container">
+                    <div className='mt-10'>
+                        <h2>Perfect for Queenstown Road Trips</h2>
+                        <p>Queenstown is the gateway to some of New Zealand’s most beautiful destinations.
+                            With your own rental car, you can explore at your own pace</p>
+                    </div>
+
+                <div className="twm-inline-list2">
+                    <h3>Popular drives include:</h3>
+                    <ul>
+                        <li>Glenorchy scenic drive</li>
+                        <li>Wanaka day trip</li>
+                        <li>Milford Sound adventure</li>
+                        <li>Mount Cook journey</li>
+                    </ul>
+                </div>
+                <p>Start your journey with a reliable rental car.</p>
+                </div>
+            </div>
+
+
+            <div className="section-full p-t150 site-bg-white wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+                <div className="container">
+                    <div className='mt-10'>
+                        <h2>Customer Promise</h2>
+                    </div>
+
+                <div className="twm-inline-list2 mt-8">
+                    <h3>At Go Queenstown Car Rentals, our goal is simple:</h3>
+                    <ul className="mt-4">
+                        <li>Provide reliable vehicles, transparent pricing, and a smooth rental experience for travelers exploring New Zealand.</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+
     
             <div className="section-full p-t150 site-bg-white twm-w-steps-section-wrap wow fadeInDown url(images/step-bg.jpg)">
                 <div className="container">
