@@ -28,7 +28,7 @@ export default function Home() {
                             <div className="twm-banner-left-info">
                                 <div className="twm-banner-left-content">
 
-                                    <div className="twm-sm-title left">Premium</div>
+                                    {/* <div className="twm-sm-title left">Premium</div> */}
                                     <h2 className="twm-banner-title">
                                         <em data-wait="3000" data-words='["The Best Rental", "Wide Range of"]'></em>
                                         Explore Queenstown with a Reliable Rental Car

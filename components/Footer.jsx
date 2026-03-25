@@ -11,8 +11,8 @@ const Footer = () => {
                         <div className="col-xl-4 col-lg-4">
                             
                             <div className="widget widget_about">
-                                <div className="logo-footer clearfix">
-                                    <a href="index.html"><img src="images/goqtownlogo.png" alt="Image"/></a>
+                                <div className="flex justify-center items-center min-h-40">
+                                    <a href="index.html"><img src="images/goqtownlogo.png" className='w-24' alt="Image"/></a>
                                 </div>
                                 <div className="f-about-info">
                                     We offer a range of the finest and most premium cars and bikes on rent.
@@ -112,7 +112,7 @@ const Footer = () => {
             <div className="footer-bottom">
                 <div className="footer-bottom-info">
                     <div className="footer-copy-right">
-                        <span className="copyrights-text">© 2024<span className="site-text-primary">Carntel</span> All  rights reserved.</span>
+                        <span className="copyrights-text">© 2026<span className="site-text-primary">Go Qtown Car Rentals</span> All  rights reserved.</span>
                     </div>
                 </div>
             </div>

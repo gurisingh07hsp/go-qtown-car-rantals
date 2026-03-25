@@ -10953,18 +10953,18 @@ blockquote.author-quote .twm-bq-content .twm-bq-atr-name:before {
   font-weight: 100;
   color: #fff;
   font-style: normal;
-  min-height: 90px;
+  /* min-height: 90px; */
 }
 @media (max-width: 1440px) {
   .twm-home-1-banner-wrap .twm-banner-left-info .twm-banner-left-content .twm-banner-title em {
     font-size: 58px;
-    min-height: 70px;
+    /* min-height: 70px; */
   }
 }
 @media (max-width: 1024px) {
   .twm-home-1-banner-wrap .twm-banner-left-info .twm-banner-left-content .twm-banner-title em {
     font-size: 40px;
-    min-height: 48px;
+    /* min-height: 48px; */
   }
 }
 .twm-home-1-banner-wrap .twm-banner-left-info .twm-banner-left-content .twm-banner-title > span {
