@@ -94,7 +94,7 @@ const page = () => {
                             <p className='text-xl'>Prices may vary depending on season and availability.</p>
 
                             <div className='mt-10'>
-                                <h2>Long-Term Rental Discounts</h2>
+                                <h2 className='h2'>Long-Term Rental Discounts</h2>
                                 <p>We offer discounts for longer bookings:</p>
                             </div>
 

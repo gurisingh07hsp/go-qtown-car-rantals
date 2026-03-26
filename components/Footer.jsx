@@ -11,7 +11,7 @@ const Footer = () => {
                         <div className="col-xl-4 col-lg-4">
                             
                             <div className="widget widget_about">
-                                <div className="flex justify-center items-center min-h-40">
+                                <div className="flex items-center md:min-h-32">
                                     <a href="index.html"><img src="images/goqtownlogo.png" className='w-24' alt="Image"/></a>
                                 </div>
                                 <div className="f-about-info">

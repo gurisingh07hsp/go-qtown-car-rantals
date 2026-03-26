@@ -799,22 +799,9 @@ const page = () => {
                                     <em>Read More</em>
                                 </a>
                             </div> */}
-                            <div className="twm-abus2-left">
-                                <div className="twm-abus-video">
-                                    <a href="https://vimeo.com/337649532" className="mfp-video ">
-                                        <i className="icon fa fa-play"></i>
-                                    </a>
-                                </div>
-                                {/* <div className="twm-abus2-year-section">
-                                    <div className="tem-abus-year-content">
-                                        <span>Since</span>
-                                        <h2 className="year-title">2016</h2>
-                                    </div>
-                                </div> */}
-                            </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 twm-abus2-right-pic url(images/ab-us.jpg) ">
+                    <div className="col-lg-6 col-md-12 hidden md:block twm-abus2-right-pic url(images/ab-us.jpg) ">
                         <div className="abus2-right-pic">
                             <h2 className="twm-title">For Rental</h2>
                         </div>

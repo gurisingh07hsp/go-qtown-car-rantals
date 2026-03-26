@@ -35,20 +35,20 @@ const page = () => {
                       
                     <div className="section-content">
                             <div className='mt-10'>
-                                <h2>Rental Insurance</h2>
+                                <h2 className='h2'>Rental Insurance</h2>
                                 <p>All rentals include standard insurance coverage.</p>
                                 <p>This provides protection during your rental period, giving you peace of mind while exploring Queenstown and surrounding areas</p>
                             </div>
 
                             <div className='mt-10'>
-                                <h2>Insurance Excess</h2>
+                                <h2 className='h2'>Insurance Excess</h2>
                                 <p>Standard excess:</p>
                                 <p>$2000  will discuss $5000</p>
                                 <p>If damage occurs, the excess amount may apply.</p>
                             </div>
 
                             <div className="twm-inline-list2 mt-10">
-                                <h2>Excess Reduction Option</h2>
+                                <h2 className='h2'>Excess Reduction Option</h2>
                                 <ul>
                                     <li>You can reduce your insurance excess by paying a small additional daily fee.</li>
                                     <li>This option provides extra protection and reduces financial risk</li>
