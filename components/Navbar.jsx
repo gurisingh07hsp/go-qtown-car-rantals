@@ -8,12 +8,8 @@ const Navbar = () => {
 
             <div className="">     
                 <div className="header-middle main-bar">
-                    <div className="">
-                        <img src="/images/goqtownlogo.png" alt="" className='md:w-20 w-12 my-1 md:my-0 lg:ms-12 ms-2' />
-                        {/* <div className="leading-0.5 text-black">
-                         <p className='md:text-3xl text-lg font-bold' >Go Qtown</p>
-                         <p className="md:text-3xl text-lg ms-4 font-bold">Car Rantals</p>
-                        </div> */}
+                    <div className="ms-2">
+                        <img src="/images/goqtownlogo.png" alt="" className='md:w-20 w-12 my-1 md:my-0 lg:ms-12' />
                     </div>
                     
                     <div className="header-info-wraper">
@@ -53,7 +49,7 @@ const Navbar = () => {
                         
                     </div>
                   
-                    <div className="extra-nav header-1-nav">
+                    <div className="extra-nav header-1-nav me-4">
                         <div className="extra-cell one">
                             <ul className="wt-topbar-left-info">
                                 <li>

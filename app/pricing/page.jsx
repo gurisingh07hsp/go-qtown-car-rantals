@@ -40,7 +40,7 @@ const page = () => {
                                     <div className="twm-vehicle-fleet-bx twm-custom-grid-2">
                                         <div className="twm-media">
                                             <div className="twm-media-pic">
-                                                <img src="images/vehicle-2/pic1.jpg" alt="image"/>
+                                                <img src="images/vehicle-2/car1.png" alt="image"/>
                                             </div>
                                             <div className="twm-price-section">
                                                 <div className="v-price">$130-150</div>
@@ -58,7 +58,7 @@ const page = () => {
                                     <div className="twm-vehicle-fleet-bx twm-custom-grid-2">
                                         <div className="twm-media">
                                             <div className="twm-media-pic">
-                                                <img src="images/vehicle-2/pic2.jpg" alt="image"/>
+                                                <img src="images/vehicle-2/car2.png" alt="image"/>
                                             </div>
                                             <div className="twm-price-section">
                                                 <div className="v-price">$250-300</div>

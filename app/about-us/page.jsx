@@ -98,11 +98,11 @@ const page = () => {
                         
                             <div className="col-lg-6 col-md-12">
                                <div className="twm-how-it-work-media">
-                                   <img src="images/h-it-work.jpg" alt="#"/>
+                                   <img src="images/abus-pic1.png" alt="#"/>
                                </div> 
                             </div>
     
-                            <div className="col-lg-6 col-md-12">
+                            <div className="col-lg-6 col-md-12 nnuh">
 
                                 <div className="twm-how-it-work-content">
                                     <div className="section-head left">

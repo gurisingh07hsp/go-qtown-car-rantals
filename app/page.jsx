@@ -1,4 +1,3 @@
-import Loading from "../components/Loading";
 import '../public/css/animate.min.css'
 import '../public/css/feather.css'
 import '../public/css/lc_lightbox.css'
@@ -53,32 +52,32 @@ export default function Home() {
                                                         </div>
                                                     </div>
                                                   
-                                                    <div className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-Van">
+                                                    {/* <div className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-Van">
                                                         <div className="twm-tabs-bx">
                                                             <div className="tabs-media">
                                                                 <img src="images/tabs-icon/van.png" alt="#"/>
                                                             </div>
                                                             <div className="tabs-title">Van</div>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                 
-                                                    <div className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-Minibus">
+                                                    {/* <div className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-Minibus">
                                                         <div className="twm-tabs-bx">
                                                             <div className="tabs-media">
                                                                 <img src="images/tabs-icon/minibus.png" alt="#"/>
                                                             </div>
                                                             <div className="tabs-title">Minibus</div>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                    
-                                                    <div className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-coupe">
+                                                    {/* <div className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-coupe">
                                                         <div className="twm-tabs-bx">
                                                             <div className="tabs-media">
                                                                 <img src="images/tabs-icon/coupe.png" alt="#"/>
                                                             </div>
                                                             <div className="tabs-title">Coupe</div>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                   
                                                 </div>
                                             </nav>
@@ -89,17 +88,6 @@ export default function Home() {
 
                                                         <form>
                                                             <div className="row m-b20">
-                                                                {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Choose Vehicle type</label>
-                                                                        <select className="form-select form-control" aria-label="Default select example">
-                                                                            <option value=''>Model</option>
-                                                                            <option value="1">Yamaha</option>
-                                                                            <option value="2">Honda</option>
-                                                                            <option value="3">Suzuki</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div> */}
                                                                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Pick up Location</label>
@@ -161,7 +149,10 @@ export default function Home() {
                                                             </div>
     
                                                             <div className="twm-tabs-search-btn">
-                                                                <a href="cars-grid-4.html" className="site-button">
+                                                                {/* <button type='button' onClick={() => setShowIframe(true)} className="site-button">
+                                                                    <em>Book Your Car</em>
+                                                                </button> */}
+                                                                   <a href="/booking" className="site-button">
                                                                     <em>Book Your Car</em>
                                                                 </a>
                                                             </div>
@@ -175,17 +166,6 @@ export default function Home() {
 
                                                         <form>
                                                             <div className="row m-b20">
-                                                                {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Choose Vehicle type</label>
-                                                                        <select className="form-select form-control" aria-label="Default select example">
-                                                                            <option value=''>Model</option>
-                                                                            <option value="1">Yamaha</option>
-                                                                            <option value="2">Honda</option>
-                                                                            <option value="3">Suzuki</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div> */}
                                                                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Pick up Location</label>
@@ -247,7 +227,7 @@ export default function Home() {
                                                             </div>
     
                                                             <div className="twm-tabs-search-btn">
-                                                                <a href="cars-grid-4.html" className="site-button">
+                                                                <a href="/booking" className="site-button">
                                                                     <em>Book Your Car</em>
                                                                 </a>
                                                             </div>
@@ -333,7 +313,7 @@ export default function Home() {
                                                             </div>
     
                                                             <div className="twm-tabs-search-btn">
-                                                                <a href="cars-grid-4.html" className="site-button">
+                                                                <a href="/booking" className="site-button">
                                                                     <em>Book Your Car</em>
                                                                 </a>
                                                             </div>
@@ -419,7 +399,7 @@ export default function Home() {
                                                             </div>
     
                                                             <div className="twm-tabs-search-btn">
-                                                                <a href="cars-grid-4.html" className="site-button">
+                                                                <a href="/booking" className="site-button">
                                                                     <em>Book Your Car</em>
                                                                 </a>
                                                             </div>
@@ -457,8 +437,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>   
-          
-
            
             <div className="section-full p-t150 p-b120 site-bg-white twm-w-range-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container">
@@ -548,89 +526,11 @@ export default function Home() {
                         </div>
                         <div className="col-xl-2 col-lg-12">
                             <div className="twm-mid-section-btn">
-                                <a href="#" className="site-button">
+                                <a href="/cars" className="site-button">
                                     <em>View All Brands</em>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-      
-            <div className="twm-client-slider1-wrap site-bg-white">
-                <div className="twm-client-slider1">
-                    <div className="owl-carousel home-client-carousel3 owl-btn-vertical-center">
-                    
-                        <div className="item">
-                            <div className="ow-client-logo">
-                                <div className="client-logo client-logo-media">
-                                <a href="#"><img src="images/client-logo/dark/w1.png" alt=""/></a></div>
-                            </div>
-                        </div>
-                        
-                        <div className="item">
-                            <div className="ow-client-logo">
-                                <div className="client-logo client-logo-media">
-                                <a href="#"><img src="images/client-logo/dark/w2.png" alt=""/></a></div>
-                            </div>
-                        </div>
-                        
-                        <div className="item">
-                            <div className="ow-client-logo">
-                                <div className="client-logo client-logo-media">
-                                <a href="#"><img src="images/client-logo/dark/w3.png" alt=""/></a></div>
-                            </div>
-                        </div>
-                        
-                        <div className="item">
-                            <div className="ow-client-logo">
-                                <div className="client-logo client-logo-media">
-                                <a href="#"><img src="images/client-logo/dark/w4.png" alt=""/></a></div>
-                            </div>
-                        </div>
-                        
-                        <div className="item">
-                            <div className="ow-client-logo">
-                                <div className="client-logo client-logo-media">
-                                <a href="#"><img src="images/client-logo/dark/w5.png" alt=""/></a></div>
-                            </div>
-                        </div>
-                        
-                        <div className="item">
-                            <div className="ow-client-logo">
-                                <div className="client-logo client-logo-media">
-                                <a href="#"><img src="images/client-logo/dark/w6.png" alt=""/></a></div>
-                            </div>
-                        </div>
-                        
-                        <div className="item">
-                            <div className="ow-client-logo">
-                                <div className="client-logo client-logo-media">
-                                <a href="#"><img src="images/client-logo/dark/w1.png" alt=""/></a></div>
-                            </div>
-                        </div>
-                        
-                        <div className="item">
-                            <div className="ow-client-logo">
-                                <div className="client-logo client-logo-media">
-                                <a href="#"><img src="images/client-logo/dark/w2.png" alt=""/></a></div>
-                            </div>
-                        </div>
-                        
-                        <div className="item">
-                            <div className="ow-client-logo">
-                                <div className="client-logo client-logo-media">
-                                <a href="#"><img src="images/client-logo/dark/w3.png" alt=""/></a></div>
-                            </div>
-                        </div>
-                        
-                        <div className="item">
-                            <div className="ow-client-logo">
-                                <div className="client-logo client-logo-media">
-                                <a href="#"><img src="images/client-logo/dark/w5.png" alt=""/></a></div>
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
             </div>
