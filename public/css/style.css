@@ -10889,7 +10889,7 @@ blockquote.author-quote .twm-bq-content .twm-bq-atr-name:before {
   }
 }
 .twm-home-1-banner-wrap .twm-banner-left-info {
-  padding-top: 100px;
+  padding-top: 10px;
   padding-bottom: 50px;
   max-width: 640px;
   margin-left: 65px;
@@ -11008,7 +11008,7 @@ blockquote.author-quote .twm-bq-content .twm-bq-atr-name:before {
 }
 .twm-home-1-banner-wrap .twm-banner-right-section .twm-banner-r-bx {
   width: 630px;
-  height: 650px;
+  height: 600px;
   margin-right: 70px;
   border-radius: 0px 0px 50% 50%;
   background: linear-gradient(to bottom, rgb(16, 16, 16) 7%, rgb(255, 97, 0) 90%);
@@ -11043,6 +11043,7 @@ blockquote.author-quote .twm-bq-content .twm-bq-atr-name:before {
   opacity: 0.4;
   background: linear-gradient(to bottom, rgb(16, 16, 16) 7%, rgb(255, 97, 0) 90%);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
 }

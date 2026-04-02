@@ -38,10 +38,10 @@ const Footer = () => {
                             <div className="ftr-right-section">
                                 
                                 <div className="row">
-                                    <div className="col-lg-5 col-md-6 col-6 m-b20">
+                                    <div className="col-lg-8 col-md-6 col-6 m-b20">
                                         
                                         <div className="widget widget_time-duraion">
-                                            <h3 className="widget-title">Quick Links</h3>
+                                            <h3 className="widget-title">Timing</h3>
                                             <ul>
                                                 <li><span>Monday - Friday:</span>09:00 AM - 09:00 PM</li>
                                                 <li><span>Saturday:</span>09:00 AM - 07:00PM </li>
@@ -66,7 +66,7 @@ const Footer = () => {
                                         
                                     </div>
 
-                                    <div className="col-lg-4 col-md-12 col-sm-12 m-b20">
+                                    {/* <div className="col-lg-4 col-md-12 col-sm-12 m-b20">
                                         
                                         <div className="widget widget_services">
                                             <h3 className="widget-title">Vehicles Type</h3>
@@ -84,7 +84,7 @@ const Footer = () => {
                                             </ul>
                                         </div>
                                         
-                                    </div>
+                                    </div> */}
     
                                 </div> 
 

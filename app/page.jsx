@@ -1,3 +1,4 @@
+'use client'
 import '../public/css/animate.min.css'
 import '../public/css/feather.css'
 import '../public/css/lc_lightbox.css'
@@ -5,8 +6,21 @@ import '../public/css/font-awesome.min.css'
 import '../public/css/magnific-popup.min.css'
 import '../public/css/bootstrap.min.css'
 import '../public/css/style.css'
+import { useState } from 'react'
+import { useRouter } from "next/navigation";
+
 
 export default function Home() {
+    const [pickupDate, setPickupDate] = useState(new Date());
+    const [returnDate, setReturnDate] = useState(new Date());
+    const [pickupLocation, setPickupLocation] = useState("");
+    const router = useRouter();
+
+    const formatToISO = (date) => {
+  if (!date) return "";
+  const d = new Date(date);
+  return d.toISOString().split("T")[0]; // "2026-04-10"
+};
   return (
   <div>
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
@@ -52,33 +66,6 @@ export default function Home() {
                                                         </div>
                                                     </div>
                                                   
-                                                    {/* <div className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-Van">
-                                                        <div className="twm-tabs-bx">
-                                                            <div className="tabs-media">
-                                                                <img src="images/tabs-icon/van.png" alt="#"/>
-                                                            </div>
-                                                            <div className="tabs-title">Van</div>
-                                                        </div>
-                                                    </div> */}
-                                                
-                                                    {/* <div className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-Minibus">
-                                                        <div className="twm-tabs-bx">
-                                                            <div className="tabs-media">
-                                                                <img src="images/tabs-icon/minibus.png" alt="#"/>
-                                                            </div>
-                                                            <div className="tabs-title">Minibus</div>
-                                                        </div>
-                                                    </div> */}
-                                                   
-                                                    {/* <div className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-coupe">
-                                                        <div className="twm-tabs-bx">
-                                                            <div className="tabs-media">
-                                                                <img src="images/tabs-icon/coupe.png" alt="#"/>
-                                                            </div>
-                                                            <div className="tabs-title">Coupe</div>
-                                                        </div>
-                                                    </div> */}
-                                                  
                                                 </div>
                                             </nav>
                                             <div className="tab-content" id="nav-tabContent">
@@ -89,23 +76,26 @@ export default function Home() {
                                                         <form>
                                                             <div className="row m-b20">
                                                                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
+                                                                    <div className="flex flex-col">
                                                                         <label>Pick up Location</label>
-                                                                        <input className="form-control" placeholder="Type..."/>
+                                                                        <select className='border p-2 rounded-lg'>
+                                                                            <option value="">Christchurch</option>
+                                                                        </select>
+                                                                        {/* <input value={pickupLocation} onChange={(e) => setPickupLocation(e.target.value)} className="form-control" placeholder="Type..."/> */}
                                                                     </div>
                                                                 </div>
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
+                                                                {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
                                                                     <div className="form-group">
                                                                         <label>Drop off Location</label>
                                                                         <input className="form-control" placeholder="Type..."/>
                                                                     </div>
-                                                                </div>
-                                                                <div className="col-xxl-6 col-xl-6 col-lg-6">
+                                                                </div> */}
+                                                                {/* <div className="col-xxl-6 col-xl-6 col-lg-6">
                                                                     <div className="form-group form-group-2column-wrap twm-input-with-icon">
                                                                         <label>Pick up date and time</label>
                                                                         <div className="form-group-2column">
                                                                             <div className="input-group date datepicker">
-                                                                                <input className="form-control" placeholder="Date"/>
+                                                                                <input value={pickupDate} onChange={(e) => setPickupDate(e.target.value)} type='Date' className="form-control" placeholder="Date"/>
                                                                                 <span className="input-group-append input-group-addon">
                                                                                     <span className="input-group-text">
                                                                                         <i className="fa fa-solid fa-calendar-days"></i>
@@ -113,7 +103,7 @@ export default function Home() {
                                                                                 </span>
                                                                             </div>
                                                                             <div className="input-group time timepicker">
-                                                                                <input className="form-control" placeholder="Time"/>
+                                                                                <input className="form-control" placeholder="Time" type='Time'/>
                                                                                 <span className="input-group-append input-group-addon">
                                                                                     <span className="input-group-text">
                                                                                         <i className="fa-regular fa-clock"></i>
@@ -122,13 +112,13 @@ export default function Home() {
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                                <div className="col-xxl-6 col-xl-6 col-lg-6">
+                                                                </div> */}
+                                                                {/* <div className="col-xxl-6 col-xl-6 col-lg-6">
                                                                     <div className="form-group form-group-2column-wrap twm-input-with-icon">
                                                                         <label>Return date and time</label>
                                                                         <div className="form-group-2column">
                                                                             <div className="input-group date datepicker">
-                                                                                <input className="form-control" placeholder="Date"/>
+                                                                                <input value={returnDate} onChange={(e) => setReturnDate(e.target.value)} type='Date' className="form-control" placeholder="Date"/>
                                                                                 <span className="input-group-append input-group-addon">
                                                                                     <span className="input-group-text">
                                                                                         <i className="fa fa-solid fa-calendar-days"></i>
@@ -136,7 +126,7 @@ export default function Home() {
                                                                                 </span>
                                                                             </div>
                                                                             <div className="input-group time timepicker">
-                                                                                <input className="form-control" placeholder="Time"/>
+                                                                                <input className="form-control" type='Time' placeholder="Time"/>
                                                                                 <span className="input-group-append input-group-addon">
                                                                                     <span className="input-group-text">
                                                                                         <i className="fa-regular fa-clock"></i>
@@ -145,263 +135,16 @@ export default function Home() {
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
+                                                                </div> */}
                                                             </div>
     
                                                             <div className="twm-tabs-search-btn">
-                                                                {/* <button type='button' onClick={() => setShowIframe(true)} className="site-button">
+                                                                <button type='button' onClick={() =>   router.push(`/booking`)} className="site-button">
+                                                                    <em>Book Your Car</em>
+                                                                </button>
+                                                                {/* <button type='button' onClick={() =>   router.push(`/booking?pickupDate=${formatToISO(pickupDate)}&returnDate=${formatToISO(returnDate)}`)} className="site-button">
                                                                     <em>Book Your Car</em>
                                                                 </button> */}
-                                                                   <a href="/booking" className="site-button">
-                                                                    <em>Book Your Car</em>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                            
-                                                    </div>
-                                                </div>
-                  
-                                                <div className="tab-pane fade" id="nav-Van">
-                                                    <div className="twm-tabs-search-section">
-
-                                                        <form>
-                                                            <div className="row m-b20">
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Pick up Location</label>
-                                                                        <input className="form-control" placeholder="Type..."/>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Drop off Location</label>
-                                                                        <input className="form-control" placeholder="Type..."/>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-6 col-xl-6 col-lg-6">
-                                                                    <div className="form-group form-group-2column-wrap twm-input-with-icon">
-                                                                        <label>Pick up date and time</label>
-                                                                        <div className="form-group-2column">
-                                                                            <div className="input-group date datepicker">
-                                                                                <input className="form-control" placeholder="Date"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa fa-solid fa-calendar-days"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="input-group time timepicker">
-                                                                                <input className="form-control" placeholder="Time"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa-regular fa-clock"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-6 col-xl-6 col-lg-6">
-                                                                    <div className="form-group form-group-2column-wrap twm-input-with-icon">
-                                                                        <label>Return date and time</label>
-                                                                        <div className="form-group-2column">
-                                                                            <div className="input-group date datepicker">
-                                                                                <input className="form-control" placeholder="Date"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa fa-solid fa-calendar-days"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="input-group time timepicker">
-                                                                                <input className="form-control" placeholder="Time"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa-regular fa-clock"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-    
-                                                            <div className="twm-tabs-search-btn">
-                                                                <a href="/booking" className="site-button">
-                                                                    <em>Book Your Car</em>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                            
-                                                    </div>
-                                                </div>
-                                                
-                                                <div className="tab-pane fade" id="nav-Minibus">
-                                                    <div className="twm-tabs-search-section">
-
-                                                        <form>
-                                                            <div className="row m-b20">
-                                                                {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Choose Vehicle type</label>
-                                                                        <select className="form-select form-control" aria-label="Default select example">
-                                                                            <option value=''>Model</option>
-                                                                            <option value="1">Yamaha</option>
-                                                                            <option value="2">Honda</option>
-                                                                            <option value="3">Suzuki</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div> */}
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Pick up Location</label>
-                                                                        <input className="form-control" placeholder="Type..."/>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Drop off Location</label>
-                                                                        <input className="form-control" placeholder="Type..."/>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-6 col-xl-6 col-lg-6">
-                                                                    <div className="form-group form-group-2column-wrap twm-input-with-icon">
-                                                                        <label>Pick up date and time</label>
-                                                                        <div className="form-group-2column">
-                                                                            <div className="input-group date datepicker">
-                                                                                <input className="form-control" placeholder="Date"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa fa-solid fa-calendar-days"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="input-group time timepicker">
-                                                                                <input className="form-control" placeholder="Time"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa-regular fa-clock"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-6 col-xl-6 col-lg-6">
-                                                                    <div className="form-group form-group-2column-wrap twm-input-with-icon">
-                                                                        <label>Return date and time</label>
-                                                                        <div className="form-group-2column">
-                                                                            <div className="input-group date datepicker">
-                                                                                <input className="form-control" placeholder="Date"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa fa-solid fa-calendar-days"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="input-group time timepicker">
-                                                                                <input className="form-control" placeholder="Time"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa-regular fa-clock"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-    
-                                                            <div className="twm-tabs-search-btn">
-                                                                <a href="/booking" className="site-button">
-                                                                    <em>Book Your Car</em>
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                            
-                                                    </div>
-                                                </div>
-                                               
-                                                <div className="tab-pane fade" id="nav-coupe">
-                                                    <div className="twm-tabs-search-section">
-
-                                                        <form>
-                                                            <div className="row m-b20">
-                                                                {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Choose Vehicle type</label>
-                                                                        <select className="form-select form-control" aria-label="Default select example">
-                                                                            <option value=''>Model</option>
-                                                                            <option value="1">Yamaha</option>
-                                                                            <option value="2">Honda</option>
-                                                                            <option value="3">Suzuki</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div> */}
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Pick up Location</label>
-                                                                        <input className="form-control" placeholder="Type..."/>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-sm-4">
-                                                                    <div className="form-group">
-                                                                        <label>Drop off Location</label>
-                                                                        <input className="form-control" placeholder="Type..."/>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-6 col-xl-6 col-lg-6">
-                                                                    <div className="form-group form-group-2column-wrap twm-input-with-icon">
-                                                                        <label>Pick up date and time</label>
-                                                                        <div className="form-group-2column">
-                                                                            <div className="input-group date datepicker">
-                                                                                <input className="form-control" placeholder="Date"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa fa-solid fa-calendar-days"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="input-group time timepicker">
-                                                                                <input className="form-control" placeholder="Time"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa-regular fa-clock"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-xxl-6 col-xl-6 col-lg-6">
-                                                                    <div className="form-group form-group-2column-wrap twm-input-with-icon">
-                                                                        <label>Return date and time</label>
-                                                                        <div className="form-group-2column">
-                                                                            <div className="input-group date datepicker">
-                                                                                <input className="form-control" placeholder="Date"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa fa-solid fa-calendar-days"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="input-group time timepicker">
-                                                                                <input className="form-control" placeholder="Time"/>
-                                                                                <span className="input-group-append input-group-addon">
-                                                                                    <span className="input-group-text">
-                                                                                        <i className="fa-regular fa-clock"></i>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-    
-                                                            <div className="twm-tabs-search-btn">
-                                                                <a href="/booking" className="site-button">
-                                                                    <em>Book Your Car</em>
-                                                                </a>
                                                             </div>
                                                         </form>
                                                             
@@ -419,18 +162,18 @@ export default function Home() {
                             <div className="twm-banner-right-section">
                                 <div className="twm-banner-r-content">
                                     <div className="twm-banner-r-bx">
-                                        <h1 className="twm-bnr-title">Mercedes</h1>
-                                        <div className="twm-banner-product-price">
+                                        {/* <h1 className="twm-bnr-title">Mercedes</h1> */}
+                                        {/* <div className="twm-banner-product-price">
                                             <div className="twm-product-name">Mercedes</div>
                                             <div className="twm-price-section">
                                                 <div className="v-price" id="number_notification">$800</div>
                                                 <div className="v-duration">/ Day</div>
                                             </div>
-                                         </div>
+                                         </div> */}
                                     </div>
                                 </div>
                                 <div className="twm-banner-media">
-                                    <img src="images/main-slider/slider1/car1.png" className="md:w-xl" alt="Car Pic"/>
+                                    <img src="images/main-slider/slider1/herocar2.png" className="md:w-xl" alt="Car Pic"/>
                                 </div>
                             </div>
                         </div>
@@ -1029,12 +772,12 @@ export default function Home() {
                     </div>
 
                     <div className="section-content">
-                        <div className="flex md:flex-row flex-col gap-4">
+                        <div className="flex justify-center md:flex-row flex-col gap-4">
                            
                             <div className="item">
                                 <div className="twm-categories-type relative">
                                     <div className="twm-media border">
-                                        <img src="images/vehicle/pic13.jpg" alt="Image"/>
+                                        <img src="images/vehicle-2/car1.png" alt="Image"/>
                                         <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
                                             <p className="text-lg font-medium">Small Cars</p>
                                         </div>
@@ -1046,7 +789,7 @@ export default function Home() {
                             <div className="item">
                                 <div className="twm-categories-type relative">
                                     <div className="twm-media border">
-                                        <img src="images/vehicle/pic8.jpg" alt="Image"/>
+                                        <img src="images/vehicle-2/car3.png" alt="Image"/>
                                         <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
                                             <p className="text-lg font-medium">Sedans</p>
                                         </div>
@@ -1058,7 +801,7 @@ export default function Home() {
                             <div className="item">
                                 <div className="twm-categories-type relative">
                                     <div className="twm-media border">
-                                        <img src="images/vehicle/pic14.jpg" alt="Image"/>
+                                        <img src="images/vehicle-2/car2.png" alt="Image"/>
                                         <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
                                             <p className="text-lg font-medium">SUVs</p>
                                         </div>
