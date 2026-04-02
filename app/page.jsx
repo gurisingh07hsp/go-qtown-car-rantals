@@ -778,9 +778,9 @@ export default function Home() {
                                 <div className="twm-categories-type relative">
                                     <div className="twm-media border">
                                         <img src="images/vehicle-2/car1.png" alt="Image"/>
-                                        <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
+                                        {/* <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
                                             <p className="text-lg font-medium">Small Cars</p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div> 
                             </div>
@@ -790,9 +790,9 @@ export default function Home() {
                                 <div className="twm-categories-type relative">
                                     <div className="twm-media border">
                                         <img src="images/vehicle-2/car3.png" alt="Image"/>
-                                        <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
+                                        {/* <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
                                             <p className="text-lg font-medium">Sedans</p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div> 
                             </div>
@@ -802,9 +802,9 @@ export default function Home() {
                                 <div className="twm-categories-type relative">
                                     <div className="twm-media border">
                                         <img src="images/vehicle-2/car2.png" alt="Image"/>
-                                        <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
+                                        {/* <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
                                             <p className="text-lg font-medium">SUVs</p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div> 
                             </div>
