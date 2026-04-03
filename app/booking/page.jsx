@@ -25,11 +25,11 @@ const page = () => {
   //   const iframeUrl = `https://rentsyst.com/settings/iframe-constructor/?token=ce0w13SfbpuhuRpJn1hJtQSZwb-LfLlH&id=9423&date_from=${formatDate(pickupDate)}&date_to=${formatDate(returnDate)}`;
   return (
     <div>
-      <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+      {/* <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
       <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
       <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"/>
-      <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css"></link>
-      <iframe style={{width: '100%', height: 900, border: 'none'}} 
+      <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css"></link> */}
+      <iframe style={{width: '100%', height: 1200, border: 'none'}} 
         src="https://rentsyst.com/settings/iframe-constructor/?token=ce0w13SfbpuhuRpJn1hJtQSZwb-LfLlH&id=9423"
         >
         </iframe>
