@@ -29,7 +29,7 @@ const page = () => {
       <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
       <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"/>
       <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css"></link> */}
-      <iframe style={{width: '100%', height: 1200, border: 'none'}} 
+      <iframe style={{width: '100%', height: 1000, border: 'none', margin: '0px 0px 30px 0px'}} 
         src="https://rentsyst.com/settings/iframe-constructor/?token=ce0w13SfbpuhuRpJn1hJtQSZwb-LfLlH&id=9423"
         >
         </iframe>
