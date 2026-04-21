@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="">     
                 <div className="header-middle main-bar">
                     <div className="ms-2">
-                        <img src="/images/goqtownlogo.png" alt="" className='md:w-20 w-12 my-1 md:my-0 lg:ms-12' />
+                        <img src="/images/goqtownlogo.png" alt="" className='md:w-25 w-12 my-1 md:my-0 lg:ms-12' />
                     </div>
                     
                     <div className="header-info-wraper">

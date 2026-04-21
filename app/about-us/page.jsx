@@ -31,7 +31,7 @@ const page = () => {
                     </div>
                 </div>
              </div>
-            <div className="section-full p-t150 p-b120 site-bg-white twm-w-range-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+            {/* <div className="section-full p-t150 p-b120 site-bg-white twm-w-range-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container">
                     <div className="section-head center ">
                         <div className="twm-sm-title left">Find your car by car brand</div>
@@ -89,7 +89,7 @@ const page = () => {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
             <div className="section-full site-bg-light twm-how-it-work-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                  <div className="section-content">
 
@@ -98,7 +98,7 @@ const page = () => {
                         
                             <div className="col-lg-6 col-md-12">
                                <div className="twm-how-it-work-media">
-                                   <img src="images/abus-pic1.png" alt="#"/>
+                                   <img src="images/abus-pic2.png" alt="#"/>
                                </div> 
                             </div>
     
@@ -802,9 +802,6 @@ const page = () => {
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12 hidden md:block twm-abus2-right-pic url(images/ab-us.jpg) ">
-                        <div className="abus2-right-pic">
-                            <h2 className="twm-title">For Rental</h2>
-                        </div>
                     </div>
                     
                 </div>
@@ -814,7 +811,15 @@ const page = () => {
 
         </div>
      
-		<button className="scroltop"><span className="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+		<a
+            href="https://wa.me/642102720403"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <button className="scroltop1">
+                <img src="/images/whatsapp.png" alt="" />
+            </button>
+        </a>
 
  	</div>
 

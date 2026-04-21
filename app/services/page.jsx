@@ -165,13 +165,7 @@ const page = () => {
                                 <ul>
                                     <li>All Type Vehicle Available</li>
                                     <li>You Get 24/7 Roadside Assistance</li>
-                                    <li>We Are The UK’s Largest Provider</li>
                                 </ul>
-                            </div>
-                            <div className="twm-btn-left">
-                                <a href="about-us.html" className="site-button">
-                                    <em>Read More</em>
-                                </a>
                             </div>
 
                             <div className="twm-abus-st2-large-title">
@@ -190,76 +184,7 @@ const page = () => {
                 </div>
             </div>
            </div>
-
-           <div className="section-full p-t120 p-b120 site-bg-white twm-facilities-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
-            <div className="container">
-
-                <div className="section-content">
-                    <div className="row twm-step-towards-section">
-                        
-                        <div className="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div className="twm-facilities-bx">
-                                <div className="twm-media">
-                                    <img src="images/icons/courier.png" alt="image"/>
-                                </div>
-                                <div className="twm-content">
-                                    <h3 className="twm-title">Personal Driver</h3>
-                                    <p>Save Contact of your Favorite
-                                        Driver
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div className="twm-facilities-bx">
-                                <div className="twm-media">
-                                    <img src="images/icons/parking-area.png" alt="image"/>
-                                </div>
-                                <div className="twm-content">
-                                    <h3 className="twm-title">Pickup & Delivery</h3>
-                                    <p>
-                                        Track Your Pickup & Delivery in Real Time
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div className="twm-facilities-bx">
-                                <div className="twm-media">
-                                    <img src="images/icons/biological.png" alt="image"/>
-                                </div>
-                                <div className="twm-content">
-                                    <h3 className="twm-title">Fuel Plans</h3>
-                                    <p>See The Nearest Gas Station On 
-                                        Your Way
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div className="twm-facilities-bx">
-                                <div className="twm-media">
-                                    <img src="images/icons/maps.png" alt="image"/>
-                                </div>
-                                <div className="twm-content">
-                                    <h3 className="twm-title">Car Navigation</h3>
-                                    <p>
-                                        Select Only Shortest and Best Route
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-           </div>
-           <div className="section-full p-t150 p-b120 site-bg-dark twm-step-towards-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+           <div className="section-full my-10 p-t150 p-b120 site-bg-dark twm-step-towards-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
               <div className="twm-half-bg-pic url(images/half-bg-pic.jpg)"></div>
               <div className="container">
 
@@ -340,7 +265,6 @@ const page = () => {
                             <div className="col-xl-7 col-lg-6 col-md-12">
                                 <div className="twm-maskingtext m-b50">
                                     <h1>Get In Touch</h1>
-                                    <img src="images/text-masking-pic.jpg" alt="Image"/>
                                 </div>
                                 <div className="twm-get-info-wrap">
 
@@ -353,7 +277,7 @@ const page = () => {
                                                 </div>
                                                 <div className="twm-content">
                                                     <p>Phone</p>
-                                                    <h3 className="twm-title"><a href="tel:456-789-1012">456 789 1012</a></h3>
+                                                    <h3 className="twm-title"><a href="tel:+642102720403">+642102720403</a></h3>
                                                 </div>
                                             </div>
                                         </li>
@@ -365,12 +289,12 @@ const page = () => {
                                                 </div>
                                                 <div className="twm-content">
                                                     <p>Email</p>
-                                                    <h3 className="twm-title">carntelinfo@gmail.com</h3>
+                                                    <h3 className="twm-title">goqtowncarrentals@gmail.com</h3>
                                                 </div>
                                             </div>
                                         </li>
         
-                                        <li>
+                                        {/* <li>
                                             <div className="twm-get-info">
                                                 <div className="twm-media">
                                                     <i className="feather feather-home"></i>
@@ -380,7 +304,7 @@ const page = () => {
                                                     <h3 className="twm-title">55/11 ronin tower New York</h3>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </li> */}
         
                                     </ul>
 
@@ -469,7 +393,15 @@ const page = () => {
            </div>   
 
         </div>
-		<button className="scroltop"><span className="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+		<a
+            href="https://wa.me/642102720403"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <button className="scroltop1">
+                <img src="/images/whatsapp.png" alt="" />
+            </button>
+        </a>
 
  	</div> 
 <script src="js/jquery-3.7.1.min.js"></script>

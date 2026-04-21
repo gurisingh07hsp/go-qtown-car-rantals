@@ -76,7 +76,7 @@ const page = () => {
                                     <div className="twm-vehicle-fleet-bx twm-custom-grid-2">
                                         <div className="twm-media">
                                             <div className="twm-media-pic">
-                                                <img src="images/vehicle-2/pic3.jpg" alt="image"/>
+                                                <img src="images/vehicle-2/car3.png" alt="image"/>
                                             </div>
                                             <div className="twm-price-section">
                                                 <div className="v-price">$300-400</div>
@@ -118,7 +118,15 @@ const page = () => {
           
 
         </div>
-		<button className="scroltop"><span className="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+	    <a
+            href="https://wa.me/642102720403"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <button className="scroltop1">
+                <img src="/images/whatsapp.png" alt="" />
+            </button>
+        </a>
 
  	</div>
  

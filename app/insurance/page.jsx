@@ -63,7 +63,15 @@ const page = () => {
           
 
         </div>
-		<button className="scroltop"><span className="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+	    <a
+            href="https://wa.me/642102720403"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <button className="scroltop1">
+                <img src="/images/whatsapp.png" alt="" />
+            </button>
+        </a>
 
  	</div>
  

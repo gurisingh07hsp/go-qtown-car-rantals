@@ -39,7 +39,6 @@ const page = () => {
                                 <div className="col-xl-7 col-lg-6 col-md-12">
                                     <div className="twm-maskingtext m-b50">
                                         <h1>Get In Touch</h1>
-                                        <img src="images/text-masking-pic.jpg" alt="Image"/>
                                     </div>
                                     <div className="twm-get-info-wrap">
 
@@ -322,7 +321,15 @@ const page = () => {
 
 
         </div>
-		<button className="scroltop"><span className="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+		<a
+            href="https://wa.me/642102720403"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <button className="scroltop1">
+                <img src="/images/whatsapp.png" alt="" />
+            </button>
+        </a>
 
  	</div>
 

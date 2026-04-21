@@ -11,16 +11,7 @@ import { useRouter } from "next/navigation";
 
 
 export default function Home() {
-    const [pickupDate, setPickupDate] = useState(new Date());
-    const [returnDate, setReturnDate] = useState(new Date());
-    const [pickupLocation, setPickupLocation] = useState("");
     const router = useRouter();
-
-    const formatToISO = (date) => {
-  if (!date) return "";
-  const d = new Date(date);
-  return d.toISOString().split("T")[0]; // "2026-04-10"
-};
   return (
   <div>
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
@@ -35,7 +26,20 @@ export default function Home() {
 
          
             <div className="twm-home-1-banner-wrap">
-                <div className="twm-home-1-banner bg-black bg-center">
+                <div className="twm-home-1-banner border relative bg-center">
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        >
+                        <source src="/images/banner/hero-video.mp4" type="video/mp4" />
+                    </video>
+
+                    {/* Overlay (optional for dark effect) */}
+                    <div className="absolute inset-0 bg-black/50"></div>
+
                     <div className="twm-banner-LR-wrap">
                         <div className="twm-banner-left">
                             <div className="twm-banner-left-info">
@@ -158,30 +162,30 @@ export default function Home() {
                                 </div>
                              </div>
                         </div>
-                        <div className="twm-banner-right md:block hidden">
+                        {/* <div className="twm-banner-right md:block hidden">
                             <div className="twm-banner-right-section">
                                 <div className="twm-banner-r-content">
                                     <div className="twm-banner-r-bx">
-                                        {/* <h1 className="twm-bnr-title">Mercedes</h1> */}
-                                        {/* <div className="twm-banner-product-price">
+                                        <h1 className="twm-bnr-title">Mercedes</h1>
+                                        <div className="twm-banner-product-price">
                                             <div className="twm-product-name">Mercedes</div>
                                             <div className="twm-price-section">
                                                 <div className="v-price" id="number_notification">$800</div>
                                                 <div className="v-duration">/ Day</div>
                                             </div>
-                                         </div> */}
+                                         </div>
                                     </div>
                                 </div>
                                 <div className="twm-banner-media">
                                     <img src="images/main-slider/slider1/herocar2.png" className="md:w-xl" alt="Car Pic"/>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>   
            
-            <div className="section-full p-t150 p-b120 site-bg-white twm-w-range-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+            {/* <div className="section-full p-t150 p-b120 site-bg-white twm-w-range-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container">
 
                    
@@ -247,9 +251,9 @@ export default function Home() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
   
-            <div className="section-full twm-explore-section-wrap site-bg-primary">
+            {/* <div className="section-full twm-explore-section-wrap site-bg-primary">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-4 col-lg-12">
@@ -276,7 +280,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
          
             <div className="section-full site-bg-white p-t150 p-b120 twm-abus-section-wrap wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
                 <div className="container">
@@ -326,7 +330,6 @@ export default function Home() {
                                 <ul>
                                     <li>All Type Vehicle Available</li>
                                     <li>You Get 24/7 Roadside Assistance</li>
-                                    <li>We Are The UK’s Largest Provider</li>
                                 </ul>
                             </div>
                             <div className="twm-btn-left">
@@ -777,7 +780,7 @@ export default function Home() {
                             <div className="item">
                                 <div className="twm-categories-type relative">
                                     <div className="twm-media border">
-                                        <img src="images/vehicle-2/car1.png" alt="Image"/>
+                                        <img src="images/vehicle-2/car2.png" alt="Image"/>
                                         {/* <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
                                             <p className="text-lg font-medium">Small Cars</p>
                                         </div> */}
@@ -789,7 +792,7 @@ export default function Home() {
                             <div className="item">
                                 <div className="twm-categories-type relative">
                                     <div className="twm-media border">
-                                        <img src="images/vehicle-2/car3.png" alt="Image"/>
+                                        <img src="images/vehicle-2/car1.png" alt="Image"/>
                                         {/* <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
                                             <p className="text-lg font-medium">Sedans</p>
                                         </div> */}
@@ -801,7 +804,7 @@ export default function Home() {
                             <div className="item">
                                 <div className="twm-categories-type relative">
                                     <div className="twm-media border">
-                                        <img src="images/vehicle-2/car2.png" alt="Image"/>
+                                        <img src="images/vehicle-2/car3.png" alt="Image"/>
                                         {/* <div className="absolute bottom-2 flex justify-center pt-1 h-10 rounded-tr-4xl bg-white w-[30%]">
                                             <p className="text-lg font-medium">SUVs</p>
                                         </div> */}
@@ -835,6 +838,35 @@ export default function Home() {
                     </ul>
                 </div>
                 <p>Start your journey with a reliable rental car.</p>
+                </div>
+            </div>
+
+
+            <div className="section-full p-t150 site-bg-white wow fadeInDown" data-wow-offset="100" data-wow-delay="0.2">
+                <div className="container">
+                    <div className='mt-10 text-center'>
+                        <h2>Testimonial</h2>
+                    </div>
+                    <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-col-1 gap-6 text-center max-w-6xl mx-auto mt-4'>
+                        <div className='border rounded-lg px-4 pt-3 bg-[#f4f5f7]'>
+                            <h3>Donald Jackman</h3>
+                            <div className='mx-10 mt-4'>
+                                <p>I've been using imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.</p>
+                            </div>
+                        </div>
+                        <div className='border rounded-lg px-4 pt-3 bg-[#f4f5f7]'>
+                            <h3>Richard Nelson</h3>
+                            <div className='mx-10 mt-4'>
+                                <p>I've been using imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.</p>
+                            </div>
+                        </div>
+                        <div className='border rounded-lg px-4 pt-3 bg-[#f4f5f7]'>
+                            <h3>James Washington</h3>
+                            <div className='mx-10 mt-4'>
+                                <p>I've been using imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -932,7 +964,16 @@ export default function Home() {
         
      
         </div>
-		<button className="scroltop"><span className="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+		{/* <button className="scroltop"><span className="fa fa-angle-up  relative" id="btn-vibrate"></span></button> */}
+        <a
+            href="https://wa.me/642102720403"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <button className="scroltop1">
+                <img src="/images/whatsapp.png" alt="" />
+            </button>
+        </a>
 
  	</div>
 <script src="js/jquery-3.7.1.min.js"></script>

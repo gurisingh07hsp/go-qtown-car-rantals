@@ -3935,28 +3935,27 @@ ol li {
 }
 
 /*______Scroll top btn css______*/
-button.scroltop {
-  height: 40px;
-  width: 40px;
-  background: #1d1b18;
+button.scroltop1 {
+  height: 55px;
+  width: 55px;
   border: none;
   position: fixed;
   right: 15px;
   bottom: 15px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin: 0;
   padding: 0;
   cursor: pointer;
-  display: none;
+  /* display: none; */
   text-align: center;
   z-index: 999;
   color: #fff;
 }
-button.scroltop span {
+/* button.scroltop span {
   display: block;
   font-size: 24px;
   line-height: 24px;
-}
+} */
 
 /*______Inner Page Banner______*/
 .wt-bnr-inr {
@@ -10931,7 +10930,7 @@ blockquote.author-quote .twm-bq-content .twm-bq-atr-name:before {
 .twm-home-1-banner-wrap .twm-banner-left-info .twm-banner-left-content .twm-banner-title {
   font-size: 50px;
   font-weight: 700;
-  color: #ff6100;
+  color: white;
   line-height: 90px;
   margin-bottom: 30px;
 }
